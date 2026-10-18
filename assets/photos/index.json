@@ -1,0 +1,212 @@
+{
+ "woman_laptop_sofa": {
+  "file": "woman_laptop_sofa.jpg",
+  "description": "Smiling woman in a teal dress working on a laptop on a sofa",
+  "tags": [
+   "people",
+   "digital",
+   "ecommerce",
+   "home"
+  ]
+ },
+ "beauty_makeup_consultant": {
+  "file": "beauty_makeup_consultant.jpg",
+  "description": "Beauty consultant applying make-up to a customer in store",
+  "tags": [
+   "people",
+   "beauty",
+   "cosmetics",
+   "instore",
+   "promoter"
+  ]
+ },
+ "two_shoppers_phone": {
+  "file": "two_shoppers_phone.jpg",
+  "description": "Two women shopping in a grocery aisle, one checking her phone",
+  "tags": [
+   "people",
+   "shoppers",
+   "grocery",
+   "retail"
+  ]
+ },
+ "merchandiser_snacks_aisle": {
+  "file": "merchandiser_snacks_aisle.jpg",
+  "description": "Smollan merchandiser in a branded polo arranging a snacks display",
+  "tags": [
+   "merchandiser",
+   "field",
+   "execution",
+   "smollan",
+   "retail"
+  ]
+ },
+ "man_stocking_jars_shelf": {
+  "file": "man_stocking_jars_shelf.jpg",
+  "description": "Man stocking jars and spreads on a supermarket shelf",
+  "tags": [
+   "shelf",
+   "retail",
+   "availability",
+   "merchandising"
+  ]
+ },
+ "couple_fresh_produce": {
+  "file": "couple_fresh_produce.jpg",
+  "description": "Couple choosing fresh produce (lettuce) in a store",
+  "tags": [
+   "people",
+   "shoppers",
+   "fresh",
+   "produce"
+  ]
+ },
+ "man_glasses_shelf_check": {
+  "file": "man_glasses_shelf_check.jpg",
+  "description": "Man in glasses checking products on a brightly lit shelf",
+  "tags": [
+   "shelf",
+   "audit",
+   "merchandising",
+   "retail"
+  ]
+ },
+ "woman_phone_sofa": {
+  "file": "woman_phone_sofa.jpg",
+  "description": "Woman with braids smiling at her phone on a sofa",
+  "tags": [
+   "people",
+   "digital",
+   "mobile",
+   "home"
+  ]
+ },
+ "woman_pharmacy_shelf": {
+  "file": "woman_pharmacy_shelf.jpg",
+  "description": "Woman choosing a product in a pharmacy / health-and-beauty aisle",
+  "tags": [
+   "pharmacy",
+   "health",
+   "beauty",
+   "shopper"
+  ]
+ },
+ "canned_goods_shelf": {
+  "file": "canned_goods_shelf.jpg",
+  "description": "Full shelves of canned goods (no people)",
+  "tags": [
+   "shelf",
+   "retail",
+   "availability",
+   "products"
+  ]
+ },
+ "merchandiser_mono": {
+  "file": "merchandiser_mono.png",
+  "description": "Black-and-white photo of a merchandiser restocking a shelf",
+  "tags": [
+   "merchandiser",
+   "field",
+   "execution",
+   "mono"
+  ]
+ },
+ "office_team_walk": {
+  "file": "office_team_walk.jpg",
+  "description": "Three colleagues walking and talking in a Smollan office corridor",
+  "tags": [
+   "people",
+   "office",
+   "team",
+   "corporate"
+  ]
+ },
+ "woman_cosmetics_aisle": {
+  "file": "woman_cosmetics_aisle.jpg",
+  "description": "Woman with a phone in a cosmetics aisle (square crop)",
+  "tags": [
+   "people",
+   "beauty",
+   "shopper",
+   "mobile"
+  ]
+ },
+ "meeting_sofa_tablet": {
+  "file": "meeting_sofa_tablet.jpg",
+  "description": "Two colleagues in a meeting on a blue sofa with a tablet",
+  "tags": [
+   "people",
+   "office",
+   "meeting",
+   "corporate"
+  ]
+ },
+ "beauty_makeup_consultant_wide": {
+  "file": "beauty_makeup_consultant_wide.jpg",
+  "description": "Beauty consultant applying make-up (wider crop)",
+  "tags": [
+   "people",
+   "beauty",
+   "cosmetics",
+   "instore"
+  ]
+ },
+ "woman_laptop_closeup": {
+  "file": "woman_laptop_closeup.jpg",
+  "description": "Woman with braids using a laptop (close-up)",
+  "tags": [
+   "people",
+   "digital",
+   "ecommerce"
+  ]
+ },
+ "two_women_product_choice": {
+  "file": "two_women_product_choice.jpg",
+  "description": "Two women comparing a personal-care product in store",
+  "tags": [
+   "people",
+   "shoppers",
+   "beauty"
+  ]
+ },
+ "woman_office_hijab": {
+  "file": "woman_office_hijab.jpg",
+  "description": "Smiling woman in a hijab sitting in an office",
+  "tags": [
+   "people",
+   "office",
+   "corporate",
+   "team"
+  ]
+ },
+ "merchandiser_detergent_aisle": {
+  "file": "merchandiser_detergent_aisle.jpg",
+  "description": "Merchandiser arranging detergent packs on a shelf",
+  "tags": [
+   "merchandiser",
+   "field",
+   "execution",
+   "home",
+   "care"
+  ]
+ },
+ "merchandiser_woman_shelf": {
+  "file": "merchandiser_woman_shelf.jpg",
+  "description": "Smollan merchandiser (woman) placing products on a shelf",
+  "tags": [
+   "merchandiser",
+   "field",
+   "execution",
+   "smollan"
+  ]
+ },
+ "man_glasses_shelf_wide": {
+  "file": "man_glasses_shelf_wide.jpg",
+  "description": "Man in glasses at a shelf (wider crop)",
+  "tags": [
+   "shelf",
+   "audit",
+   "merchandising"
+  ]
+ }
+}

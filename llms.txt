@@ -1,0 +1,20 @@
+# Smollan Design System
+
+> Python library that builds Smollan-branded, editable PowerPoint decks. Every official Smollan slide design (190 recipes in 16 categories: covers, dividers, title slides, stats, KPIs, process, infographics, info buckets, charts, tables, org charts, client feedback, device mockups, Why Smollan, thank-you, closing) is available as a recipe. An agent picks a recipe for each message, then calls `Deck().add(recipe_id, **slots)` and `deck.save(path)`.
+
+Start with AGENTS.md: it is the complete operating manual (setup, workflow, API, slot value formats, rules, example).
+
+## Docs
+- [AGENTS.md](AGENTS.md): how an AI agent should use this repo (read first)
+- [CATALOG.md](CATALOG.md): every recipe with thumbnail, slots, limits and an example call
+- [catalog.json](catalog.json): machine-readable recipe specs
+- [README.md](README.md): overview, setup, maintenance pipeline, known limits
+
+## Code
+- [smollan.py](smollan.py): the library and CLI (`python smollan.py list | show <id> | find <words>`)
+- [examples/demo.py](examples/demo.py): worked 13-slide deck
+
+## Optional
+- [thumbnails/](thumbnails/): one preview PNG per recipe id
+- [assets/photos/index.json](assets/photos/index.json): opt-in stock photo library
+- [tools/](tools/): rebuild pipeline from the original PPT packs

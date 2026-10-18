@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+~$*.pptx
+examples/selftest_all_recipes.pptx
+tools/scrub_names.local.json
+.DS_Store
+Thumbs.db

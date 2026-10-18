@@ -1,0 +1,1373 @@
+{
+ "core.s01": {
+  "pack": "Smollan_Core-Template_2024.pptx",
+  "slide": 1,
+  "layout": "COVER - Shape Dark Blue",
+  "hidden": false,
+  "notes": []
+ },
+ "core.s02": {
+  "pack": "Smollan_Core-Template_2024.pptx",
+  "slide": 2,
+  "layout": "DIVIDER - Shape Dark Blue",
+  "hidden": false,
+  "notes": []
+ },
+ "core.s03": {
+  "pack": "Smollan_Core-Template_2024.pptx",
+  "slide": 3,
+  "layout": "COVER - Shape Blue",
+  "hidden": false,
+  "notes": []
+ },
+ "core.s04": {
+  "pack": "Smollan_Core-Template_2024.pptx",
+  "slide": 4,
+  "layout": "1_DIVIDER - Shape Blue",
+  "hidden": false,
+  "notes": []
+ },
+ "core.s05": {
+  "pack": "Smollan_Core-Template_2024.pptx",
+  "slide": 5,
+  "layout": "1_COVER - Shape Charcoal",
+  "hidden": false,
+  "notes": []
+ },
+ "core.s06": {
+  "pack": "Smollan_Core-Template_2024.pptx",
+  "slide": 6,
+  "layout": "2_DIVIDER - Shape Charcoal",
+  "hidden": false,
+  "notes": []
+ },
+ "core.s07": {
+  "pack": "Smollan_Core-Template_2024.pptx",
+  "slide": 7,
+  "layout": "Title Slide - ONE LINE",
+  "hidden": false,
+  "notes": []
+ },
+ "core.s08": {
+  "pack": "Smollan_Core-Template_2024.pptx",
+  "slide": 8,
+  "layout": "Title Slide - ONE LINE + SUB",
+  "hidden": false,
+  "notes": []
+ },
+ "core.s09": {
+  "pack": "Smollan_Core-Template_2024.pptx",
+  "slide": 9,
+  "layout": "3_Title Slide - ONE + Sub-Heading",
+  "hidden": false,
+  "notes": []
+ },
+ "core.s10": {
+  "pack": "Smollan_Core-Template_2024.pptx",
+  "slide": 10,
+  "layout": "ONE + Sub-Heading 2",
+  "hidden": false,
+  "notes": []
+ },
+ "core.s11": {
+  "pack": "Smollan_Core-Template_2024.pptx",
+  "slide": 11,
+  "layout": "1_Title Slide - TWO LINE",
+  "hidden": false,
+  "notes": []
+ },
+ "core.s12": {
+  "pack": "Smollan_Core-Template_2024.pptx",
+  "slide": 12,
+  "layout": "2_Title Slide - TWO LINE + Sub-Heading",
+  "hidden": false,
+  "notes": []
+ },
+ "core.s13": {
+  "pack": "Smollan_Core-Template_2024.pptx",
+  "slide": 13,
+  "layout": "3_Title Slide - TWO + Sub-Heading",
+  "hidden": false,
+  "notes": []
+ },
+ "core.s14": {
+  "pack": "Smollan_Core-Template_2024.pptx",
+  "slide": 14,
+  "layout": "CLOSING Slide",
+  "hidden": false,
+  "notes": []
+ },
+ "p01.s02": {
+  "pack": "1  -  Smollan_Photo-Covers.pptx",
+  "slide": 2,
+  "layout": "8_COVER - Photo DB 5",
+  "hidden": false,
+  "notes": []
+ },
+ "p01.s03": {
+  "pack": "1  -  Smollan_Photo-Covers.pptx",
+  "slide": 3,
+  "layout": "7_COVER - Photo DB 5",
+  "hidden": false,
+  "notes": []
+ },
+ "p01.s04": {
+  "pack": "1  -  Smollan_Photo-Covers.pptx",
+  "slide": 4,
+  "layout": "9_COVER - Photo DB 5",
+  "hidden": false,
+  "notes": []
+ },
+ "p01.s05": {
+  "pack": "1  -  Smollan_Photo-Covers.pptx",
+  "slide": 5,
+  "layout": "10_COVER - Photo DB 6",
+  "hidden": false,
+  "notes": []
+ },
+ "p01.s06": {
+  "pack": "1  -  Smollan_Photo-Covers.pptx",
+  "slide": 6,
+  "layout": "1_COVER - Photo DB 1",
+  "hidden": false,
+  "notes": []
+ },
+ "p01.s07": {
+  "pack": "1  -  Smollan_Photo-Covers.pptx",
+  "slide": 7,
+  "layout": "12_COVER - Photo DB 6",
+  "hidden": false,
+  "notes": [],
+  "promoted": 1
+ },
+ "p01.s08": {
+  "pack": "1  -  Smollan_Photo-Covers.pptx",
+  "slide": 8,
+  "layout": "3_COVER - Photo DB 1",
+  "hidden": false,
+  "notes": []
+ },
+ "p01.s09": {
+  "pack": "1  -  Smollan_Photo-Covers.pptx",
+  "slide": 9,
+  "layout": "2_COVER - Photo DB 1",
+  "hidden": false,
+  "notes": []
+ },
+ "p01.s10": {
+  "pack": "1  -  Smollan_Photo-Covers.pptx",
+  "slide": 10,
+  "layout": "COVER - Photo DB 2",
+  "hidden": false,
+  "notes": []
+ },
+ "p01.s11": {
+  "pack": "1  -  Smollan_Photo-Covers.pptx",
+  "slide": 11,
+  "layout": "1_COVER - Photo DB 2",
+  "hidden": false,
+  "notes": []
+ },
+ "p01.s12": {
+  "pack": "1  -  Smollan_Photo-Covers.pptx",
+  "slide": 12,
+  "layout": "3_COVER - Photo DB 3",
+  "hidden": false,
+  "notes": []
+ },
+ "p01.s13": {
+  "pack": "1  -  Smollan_Photo-Covers.pptx",
+  "slide": 13,
+  "layout": "4_COVER - Photo DB 3",
+  "hidden": false,
+  "notes": []
+ },
+ "p01.s14": {
+  "pack": "1  -  Smollan_Photo-Covers.pptx",
+  "slide": 14,
+  "layout": "5_COVER - Photo DB 4",
+  "hidden": false,
+  "notes": []
+ },
+ "p01.s15": {
+  "pack": "1  -  Smollan_Photo-Covers.pptx",
+  "slide": 15,
+  "layout": "6_COVER - Photo DB 4",
+  "hidden": false,
+  "notes": []
+ },
+ "p02.s03": {
+  "pack": "2  -  Smollan_Photo+Client.pptx",
+  "slide": 3,
+  "layout": "8_COVER - Photo DB 5",
+  "hidden": false,
+  "notes": []
+ },
+ "p03.s02": {
+  "pack": "3  -  Thank-You.pptx",
+  "slide": 2,
+  "layout": "Thank you - A",
+  "hidden": false,
+  "notes": []
+ },
+ "p03.s03": {
+  "pack": "3  -  Thank-You.pptx",
+  "slide": 3,
+  "layout": "6_Thank you - C",
+  "hidden": false,
+  "notes": []
+ },
+ "p03.h02": {
+  "pack": "3  -  Thank-You.pptx",
+  "slide": null,
+  "layout": "1_Thank you - A",
+  "hidden": true,
+  "notes": []
+ },
+ "p03.h03": {
+  "pack": "3  -  Thank-You.pptx",
+  "slide": null,
+  "layout": "2_Thank you - A",
+  "hidden": true,
+  "notes": []
+ },
+ "p03.h04": {
+  "pack": "3  -  Thank-You.pptx",
+  "slide": null,
+  "layout": "3_Thank you - A",
+  "hidden": true,
+  "notes": []
+ },
+ "p03.h05": {
+  "pack": "3  -  Thank-You.pptx",
+  "slide": null,
+  "layout": "1_Thank you - B",
+  "hidden": true,
+  "notes": []
+ },
+ "p03.h06": {
+  "pack": "3  -  Thank-You.pptx",
+  "slide": null,
+  "layout": "2_Thank you - B",
+  "hidden": true,
+  "notes": []
+ },
+ "p03.h07": {
+  "pack": "3  -  Thank-You.pptx",
+  "slide": null,
+  "layout": "3_Thank you - B",
+  "hidden": true,
+  "notes": []
+ },
+ "p03.h08": {
+  "pack": "3  -  Thank-You.pptx",
+  "slide": null,
+  "layout": "4_Thank you - B",
+  "hidden": true,
+  "notes": []
+ },
+ "p03.h09": {
+  "pack": "3  -  Thank-You.pptx",
+  "slide": null,
+  "layout": "2_Thank you - C",
+  "hidden": true,
+  "notes": []
+ },
+ "p03.h10": {
+  "pack": "3  -  Thank-You.pptx",
+  "slide": null,
+  "layout": "4_Thank you - C",
+  "hidden": true,
+  "notes": []
+ },
+ "p03.h12": {
+  "pack": "3  -  Thank-You.pptx",
+  "slide": null,
+  "layout": "7_Thank you - C",
+  "hidden": true,
+  "notes": []
+ },
+ "p03.h13": {
+  "pack": "3  -  Thank-You.pptx",
+  "slide": null,
+  "layout": "3_Thank you - C",
+  "hidden": true,
+  "notes": []
+ },
+ "p03.h14": {
+  "pack": "3  -  Thank-You.pptx",
+  "slide": null,
+  "layout": "5_Thank you - C",
+  "hidden": true,
+  "notes": []
+ },
+ "p03.h15": {
+  "pack": "3  -  Thank-You.pptx",
+  "slide": null,
+  "layout": "8_Thank you - C",
+  "hidden": true,
+  "notes": []
+ },
+ "p03.h16": {
+  "pack": "3  -  Thank-You.pptx",
+  "slide": null,
+  "layout": "9_Thank you - C",
+  "hidden": true,
+  "notes": []
+ },
+ "p04.s02": {
+  "pack": "4  -  Tables.pptx",
+  "slide": 2,
+  "layout": "Intro + Text + 1 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p04.s03": {
+  "pack": "4  -  Tables.pptx",
+  "slide": 3,
+  "layout": "Heading + Intro + 1 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p04.s04": {
+  "pack": "4  -  Tables.pptx",
+  "slide": 4,
+  "layout": "Double Heading + 1 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p04.s05": {
+  "pack": "4  -  Tables.pptx",
+  "slide": 5,
+  "layout": "2 - Double Heading + 1 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p04.s06": {
+  "pack": "4  -  Tables.pptx",
+  "slide": 6,
+  "layout": "Single Heading + 1 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p04.s07": {
+  "pack": "4  -  Tables.pptx",
+  "slide": 7,
+  "layout": "Double Heading + 1 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p04.s08": {
+  "pack": "4  -  Tables.pptx",
+  "slide": 8,
+  "layout": "Double Heading + 1 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p04.s09": {
+  "pack": "4  -  Tables.pptx",
+  "slide": 9,
+  "layout": "1_3. Single Head + Intro + 1 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p04.s10": {
+  "pack": "4  -  Tables.pptx",
+  "slide": 10,
+  "layout": "Single Heading + 1 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p04.s11": {
+  "pack": "4  -  Tables.pptx",
+  "slide": 11,
+  "layout": "1_Intro + Text + 2 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p04.s12": {
+  "pack": "4  -  Tables.pptx",
+  "slide": 12,
+  "layout": "Heading + Intro + 2 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p04.s13": {
+  "pack": "4  -  Tables.pptx",
+  "slide": 13,
+  "layout": "Single Head + Clean 1 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p04.s14": {
+  "pack": "4  -  Tables.pptx",
+  "slide": 14,
+  "layout": "2. Single Heading + 1 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p04.s15": {
+  "pack": "4  -  Tables.pptx",
+  "slide": 15,
+  "layout": "1_3. Single Head + Intro + 1 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p04.s16": {
+  "pack": "4  -  Tables.pptx",
+  "slide": 16,
+  "layout": "1_3. Single Head + Intro + 1 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p04.s17": {
+  "pack": "4  -  Tables.pptx",
+  "slide": 17,
+  "layout": "1_Single Heading + 1 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p04gt.s02": {
+  "pack": "4  -  Tables - GROWTH TEAMS.pptx",
+  "slide": 2,
+  "layout": "1_Heading + Intro + 1 x Table",
+  "hidden": false,
+  "notes": [
+   "For Renewal clients this is a great way to paint a picture of how the structure has changed or evolved over the years"
+  ]
+ },
+ "p04gt.s03": {
+  "pack": "4  -  Tables - GROWTH TEAMS.pptx",
+  "slide": 3,
+  "layout": "2_2 Line Head + Intro + 1 x Table",
+  "hidden": false,
+  "notes": [
+   "For Renewal clients this is a great way to paint a picture of how the structure has changed or evolved over the years"
+  ]
+ },
+ "p04gt.s04": {
+  "pack": "4  -  Tables - GROWTH TEAMS.pptx",
+  "slide": 4,
+  "layout": "Double Heading + 1 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p04gt.s05": {
+  "pack": "4  -  Tables - GROWTH TEAMS.pptx",
+  "slide": 5,
+  "layout": "Single Heading + 1 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p04gt.s06": {
+  "pack": "4  -  Tables - GROWTH TEAMS.pptx",
+  "slide": 6,
+  "layout": "Head + 2 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p04gt.s07": {
+  "pack": "4  -  Tables - GROWTH TEAMS.pptx",
+  "slide": 7,
+  "layout": "Double Heading + 1 x Table",
+  "hidden": false,
+  "notes": [
+   "Generic – show to client so they understand which activities can be done at a retailer"
+  ]
+ },
+ "p04gt.s08": {
+  "pack": "4  -  Tables - GROWTH TEAMS.pptx",
+  "slide": 8,
+  "layout": "2 - Double Heading + 1 x Table",
+  "hidden": false,
+  "notes": [
+   "Generic – show to client so they understand which activities can be done at a retailer"
+  ]
+ },
+ "p04gt.s09": {
+  "pack": "4  -  Tables - GROWTH TEAMS.pptx",
+  "slide": 9,
+  "layout": "Single Head + Clean 1 x Table",
+  "hidden": false,
+  "notes": [
+   "UNIT B Figures last updated August 0000"
+  ]
+ },
+ "p04gt.s10": {
+  "pack": "4  -  Tables - GROWTH TEAMS.pptx",
+  "slide": 10,
+  "layout": "Double Heading + 1 x Table",
+  "hidden": false,
+  "notes": [
+   "UNIT B Figures last updated August 0000"
+  ]
+ },
+ "p04gt.s11": {
+  "pack": "4  -  Tables - GROWTH TEAMS.pptx",
+  "slide": 11,
+  "layout": "Single Head + Clean 1 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p04gt.s12": {
+  "pack": "4  -  Tables - GROWTH TEAMS.pptx",
+  "slide": 12,
+  "layout": "Single Head + Clean 1 x Table",
+  "hidden": false,
+  "notes": [
+   "Option 1"
+  ]
+ },
+ "p04gt.s13": {
+  "pack": "4  -  Tables - GROWTH TEAMS.pptx",
+  "slide": 13,
+  "layout": "1_Single Heading + 1 x Table",
+  "hidden": false,
+  "notes": [
+   "Option 2"
+  ]
+ },
+ "p04gt.s14": {
+  "pack": "4  -  Tables - GROWTH TEAMS.pptx",
+  "slide": 14,
+  "layout": "Single Head + Clean 1 x Table",
+  "hidden": false,
+  "notes": [
+   "Slide can be used to zone into specific areas of focus"
+  ]
+ },
+ "p04gt.s15": {
+  "pack": "4  -  Tables - GROWTH TEAMS.pptx",
+  "slide": 15,
+  "layout": "Single Head + Clean 1 x Table",
+  "hidden": false,
+  "notes": []
+ },
+ "p05.s03": {
+  "pack": "5  -  Graphs.pptx",
+  "slide": 3,
+  "layout": "Single Heading + 1 x Graph",
+  "hidden": false,
+  "notes": []
+ },
+ "p05.s04": {
+  "pack": "5  -  Graphs.pptx",
+  "slide": 4,
+  "layout": "Single Head + Intro + 1 x Graph",
+  "hidden": false,
+  "notes": []
+ },
+ "p05.s05": {
+  "pack": "5  -  Graphs.pptx",
+  "slide": 5,
+  "layout": "1_Double Heading + 1 x Graph",
+  "hidden": false,
+  "notes": []
+ },
+ "p05.s06": {
+  "pack": "5  -  Graphs.pptx",
+  "slide": 6,
+  "layout": "2_Double Heading + 2 x Graph",
+  "hidden": false,
+  "notes": []
+ },
+ "p05.s07": {
+  "pack": "5  -  Graphs.pptx",
+  "slide": 7,
+  "layout": "1_Heading + 2 x Graph + Descript",
+  "hidden": false,
+  "notes": []
+ },
+ "p05.s08": {
+  "pack": "5  -  Graphs.pptx",
+  "slide": 8,
+  "layout": "2_Heading + 2 x Graph + Descript",
+  "hidden": false,
+  "notes": []
+ },
+ "p05.s09": {
+  "pack": "5  -  Graphs.pptx",
+  "slide": 9,
+  "layout": "Intro + Text + 1 x Graph",
+  "hidden": false,
+  "notes": []
+ },
+ "p05.s10": {
+  "pack": "5  -  Graphs.pptx",
+  "slide": 10,
+  "layout": "Single Head + Text + 1 x Graph",
+  "hidden": false,
+  "notes": []
+ },
+ "p05.s11": {
+  "pack": "5  -  Graphs.pptx",
+  "slide": 11,
+  "layout": "Double Head + Text + 1 x Graph",
+  "hidden": false,
+  "notes": []
+ },
+ "p05.s12": {
+  "pack": "5  -  Graphs.pptx",
+  "slide": 12,
+  "layout": "1_Double Head + Text + 1 x Graph",
+  "hidden": false,
+  "notes": []
+ },
+ "p05.s13": {
+  "pack": "5  -  Graphs.pptx",
+  "slide": 13,
+  "layout": "Heading + Intro + 1 x Graph",
+  "hidden": false,
+  "notes": []
+ },
+ "p05.s14": {
+  "pack": "5  -  Graphs.pptx",
+  "slide": 14,
+  "layout": "2 - Double Heading + 1 x Graph",
+  "hidden": false,
+  "notes": []
+ },
+ "p05.s15": {
+  "pack": "5  -  Graphs.pptx",
+  "slide": 15,
+  "layout": "Heading + Intro + 2 x Graph",
+  "hidden": false,
+  "notes": []
+ },
+ "p06.s02": {
+  "pack": "6  -  Info-Buckets.pptx",
+  "slide": 2,
+  "layout": "Head + Sub-Head + 4 x Text Info",
+  "hidden": false,
+  "notes": []
+ },
+ "p06.s03": {
+  "pack": "6  -  Info-Buckets.pptx",
+  "slide": 3,
+  "layout": "1_Head + Sub-Head + 5 x Text Info",
+  "hidden": false,
+  "notes": []
+ },
+ "p06.s04": {
+  "pack": "6  -  Info-Buckets.pptx",
+  "slide": 4,
+  "layout": "1_Head + Sub-Head + 6 x Text Info",
+  "hidden": false,
+  "notes": []
+ },
+ "p06.s05": {
+  "pack": "6  -  Info-Buckets.pptx",
+  "slide": 5,
+  "layout": "Head + Sub-Head + Intro + 6 x Text Info",
+  "hidden": false,
+  "notes": []
+ },
+ "p06.s06": {
+  "pack": "6  -  Info-Buckets.pptx",
+  "slide": 6,
+  "layout": "Heading + Sub-Head + 8 x Info",
+  "hidden": false,
+  "notes": []
+ },
+ "p06.s07": {
+  "pack": "6  -  Info-Buckets.pptx",
+  "slide": 7,
+  "layout": "2 Heading + Sub-Head + 8 x Bullet Info",
+  "hidden": false,
+  "notes": []
+ },
+ "p06.s08": {
+  "pack": "6  -  Info-Buckets.pptx",
+  "slide": 8,
+  "layout": "Heading + Sub-Head + Intro + 8 x Info",
+  "hidden": false,
+  "notes": []
+ },
+ "p06.s09": {
+  "pack": "6  -  Info-Buckets.pptx",
+  "slide": 9,
+  "layout": "Heading + Sub-Head + Intro + 4 x Photo-Info",
+  "hidden": false,
+  "notes": []
+ },
+ "p06.s10": {
+  "pack": "6  -  Info-Buckets.pptx",
+  "slide": 10,
+  "layout": "Heading + Sub-Head + 4 x Photo-Info",
+  "hidden": false,
+  "notes": []
+ },
+ "p06.s11": {
+  "pack": "6  -  Info-Buckets.pptx",
+  "slide": 11,
+  "layout": "Heading + Sub-Head +5 x Photo-Info",
+  "hidden": false,
+  "notes": []
+ },
+ "p06.s12": {
+  "pack": "6  -  Info-Buckets.pptx",
+  "slide": 12,
+  "layout": "Heading + Sub-Head +6 x Photo-Info",
+  "hidden": false,
+  "notes": []
+ },
+ "p06.s13": {
+  "pack": "6  -  Info-Buckets.pptx",
+  "slide": 13,
+  "layout": "1_Heading + Sub-Head +Intro + 6 x Photo-Info",
+  "hidden": false,
+  "notes": []
+ },
+ "p06.s14": {
+  "pack": "6  -  Info-Buckets.pptx",
+  "slide": 14,
+  "layout": "Heading + Sub-Head + 8 x Photo-Info",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s02": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 2,
+  "layout": "1_BESPOKE: ONE HEAD + Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s03": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 3,
+  "layout": "2_BESPOKE: ONE HEAD + Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s04": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 4,
+  "layout": "3_BESPOKE: ONE HEAD + Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s05": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 5,
+  "layout": "4_BESPOKE: ONE HEAD + Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s06": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 6,
+  "layout": "5_BESPOKE: ONE HEAD + Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s07": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 7,
+  "layout": "6_BESPOKE: ONE HEAD + Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s08": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 8,
+  "layout": "7_BESPOKE: ONE HEAD + Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s09": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 9,
+  "layout": "8_BESPOKE: ONE HEAD + Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s10": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 10,
+  "layout": "9_BESPOKE: ONE HEAD + PHOTO Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s11": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 11,
+  "layout": "9_BESPOKE: ONE HEAD + PHOTO Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s12": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 12,
+  "layout": "10_BESPOKE: ONE HEAD + PHOTO Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s13": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 13,
+  "layout": "11_BESPOKE: ONE HEAD + PHOTO Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s14": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 14,
+  "layout": "12_BESPOKE: TWO HEAD + PHOTO Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s15": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 15,
+  "layout": "13_BESPOKE: TWO HEAD + PHOTO Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s16": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 16,
+  "layout": "14_BESPOKE: ONE HEAD + Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s17": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 17,
+  "layout": "ONE HEAD + Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s18": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 18,
+  "layout": " ONE HEAD + Sub-Head+ Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s19": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 19,
+  "layout": "ONE + Sub-Heading + Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s20": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 20,
+  "layout": "ONE HEAD + SUB-HEAD Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s21": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 21,
+  "layout": "DOUBLE HEAD + Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s22": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 22,
+  "layout": "DOUBLE HEAD + Sub-Head + Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s23": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 23,
+  "layout": "DOUBLE HEAD + Sub-Head + Org Chart 2",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s24": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 24,
+  "layout": "ONE HEAD + Intro Text + Org Chart",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s25": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 25,
+  "layout": "DOUBLE HEAD + Org Chart 2",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s26": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 26,
+  "layout": "ONE HEAD + 2 x Org Chart + 1 x Descriptor",
+  "hidden": false,
+  "notes": []
+ },
+ "p07.s27": {
+  "pack": "7  -  Org-Charts.pptx",
+  "slide": 27,
+  "layout": "ONE HEAD + 2 x Org Chart + 2 x Descriptor",
+  "hidden": false,
+  "notes": []
+ },
+ "p08.s02": {
+  "pack": "8  -  Client-Feedback.pptx",
+  "slide": 2,
+  "layout": "CLIENT FEEDBACK",
+  "hidden": false,
+  "notes": [],
+  "promoted": 4
+ },
+ "p08.s03": {
+  "pack": "8  -  Client-Feedback.pptx",
+  "slide": 3,
+  "layout": "1_CLIENT FEEDBACK",
+  "hidden": false,
+  "notes": [],
+  "promoted": 4
+ },
+ "p08.s04": {
+  "pack": "8  -  Client-Feedback.pptx",
+  "slide": 4,
+  "layout": "2_CLIENT FEEDBACK",
+  "hidden": false,
+  "notes": [],
+  "promoted": 3
+ },
+ "p08.s05": {
+  "pack": "8  -  Client-Feedback.pptx",
+  "slide": 5,
+  "layout": "3_CLIENT FEEDBACK",
+  "hidden": false,
+  "notes": [],
+  "promoted": 3
+ },
+ "p09.s02": {
+  "pack": "9  -  KPIs.pptx",
+  "slide": 2,
+  "layout": "HEAD + Sub-Head + 6 x KPI",
+  "hidden": false,
+  "notes": []
+ },
+ "p09.s03": {
+  "pack": "9  -  KPIs.pptx",
+  "slide": 3,
+  "layout": "HEAD + Intro + 5 x KPI",
+  "hidden": false,
+  "notes": []
+ },
+ "p09.s04": {
+  "pack": "9  -  KPIs.pptx",
+  "slide": 4,
+  "layout": "HEAD + Intro + 4 x 4 KPI",
+  "hidden": false,
+  "notes": []
+ },
+ "p09.s05": {
+  "pack": "9  -  KPIs.pptx",
+  "slide": 5,
+  "layout": "1_HEAD + Intro + 3 x 5 KPI",
+  "hidden": false,
+  "notes": []
+ },
+ "p09.s06": {
+  "pack": "9  -  KPIs.pptx",
+  "slide": 6,
+  "layout": "1_HEAD + Intro + 7 x KPI",
+  "hidden": false,
+  "notes": []
+ },
+ "p09.s07": {
+  "pack": "9  -  KPIs.pptx",
+  "slide": 7,
+  "layout": "HEAD + 4 x KPI Table",
+  "hidden": false,
+  "notes": [
+   "EDIT TABLE IN MASTER"
+  ],
+  "promoted": 1
+ },
+ "p09.s08": {
+  "pack": "9  -  KPIs.pptx",
+  "slide": 8,
+  "layout": "HEAD + 4 Strategic KPI Table",
+  "hidden": false,
+  "notes": [
+   "EDIT TABLE IN MASTER"
+  ],
+  "promoted": 1
+ },
+ "p09.s09": {
+  "pack": "9  -  KPIs.pptx",
+  "slide": 9,
+  "layout": "HEAD + KPI Scorecard Example",
+  "hidden": false,
+  "notes": []
+ },
+ "p10.s02": {
+  "pack": "10  -  Process.pptx",
+  "slide": 2,
+  "layout": "Double HEAD + Intro + 3 Step",
+  "hidden": false,
+  "notes": []
+ },
+ "p10.s03": {
+  "pack": "10  -  Process.pptx",
+  "slide": 3,
+  "layout": "1_Double HEAD + Intro + 3 Step",
+  "hidden": false,
+  "notes": []
+ },
+ "p10.s04": {
+  "pack": "10  -  Process.pptx",
+  "slide": 4,
+  "layout": "HEAD + Sub-Head + 3-4 Step",
+  "hidden": false,
+  "notes": []
+ },
+ "p10.s05": {
+  "pack": "10  -  Process.pptx",
+  "slide": 5,
+  "layout": "HEAD + Intro + 4 Step",
+  "hidden": false,
+  "notes": []
+ },
+ "p10.s06": {
+  "pack": "10  -  Process.pptx",
+  "slide": 6,
+  "layout": "Double HEAD + 4 Step",
+  "hidden": false,
+  "notes": [],
+  "promoted": 4
+ },
+ "p10.s07": {
+  "pack": "10  -  Process.pptx",
+  "slide": 7,
+  "layout": "3_Double HEAD + Intro + 5 Step",
+  "hidden": false,
+  "notes": []
+ },
+ "p10.s08": {
+  "pack": "10  -  Process.pptx",
+  "slide": 8,
+  "layout": "4_Double HEAD + Intro + Photos + 5 Step",
+  "hidden": false,
+  "notes": []
+ },
+ "p10.s09": {
+  "pack": "10  -  Process.pptx",
+  "slide": 9,
+  "layout": "SINGLE HEAD + 6 Step",
+  "hidden": false,
+  "notes": []
+ },
+ "p10.s10": {
+  "pack": "10  -  Process.pptx",
+  "slide": 10,
+  "layout": "Double HEAD + Intro + 7 Step",
+  "hidden": false,
+  "notes": []
+ },
+ "p10.s11": {
+  "pack": "10  -  Process.pptx",
+  "slide": 11,
+  "layout": "SINGLE HEAD + 8 Step",
+  "hidden": false,
+  "notes": []
+ },
+ "p10.s12": {
+  "pack": "10  -  Process.pptx",
+  "slide": 12,
+  "layout": "Double HEAD + Intro + 8 Step",
+  "hidden": false,
+  "notes": []
+ },
+ "p10.s13": {
+  "pack": "10  -  Process.pptx",
+  "slide": 13,
+  "layout": "1_Double HEAD + Intro + Repeat 8 Step",
+  "hidden": false,
+  "notes": []
+ },
+ "p11.s02": {
+  "pack": "11  -  Infographic.pptx",
+  "slide": 2,
+  "layout": "HEAD + INTRO + Triad Infographic",
+  "hidden": false,
+  "notes": []
+ },
+ "p11.s03": {
+  "pack": "11  -  Infographic.pptx",
+  "slide": 3,
+  "layout": "HEAD + Triangle Infographic",
+  "hidden": false,
+  "notes": []
+ },
+ "p11.s04": {
+  "pack": "11  -  Infographic.pptx",
+  "slide": 4,
+  "layout": "DOUBLE HEAD + Circular Infographic",
+  "hidden": false,
+  "notes": []
+ },
+ "p11.s05": {
+  "pack": "11  -  Infographic.pptx",
+  "slide": 5,
+  "layout": "1_Title Slide - ONE LINE + SUB",
+  "hidden": false,
+  "notes": []
+ },
+ "p11.s06": {
+  "pack": "11  -  Infographic.pptx",
+  "slide": 6,
+  "layout": "HEAD + Sub-Head + Pivot-Point",
+  "hidden": false,
+  "notes": []
+ },
+ "p11.s07": {
+  "pack": "11  -  Infographic.pptx",
+  "slide": 7,
+  "layout": "1_HEAD + Sub-Head + Data Pivot-Point",
+  "hidden": false,
+  "notes": [],
+  "promoted": 1
+ },
+ "p11.s08": {
+  "pack": "11  -  Infographic.pptx",
+  "slide": 8,
+  "layout": "HEAD +  4 Circular Infographic",
+  "hidden": false,
+  "notes": []
+ },
+ "p11.s09": {
+  "pack": "11  -  Infographic.pptx",
+  "slide": 9,
+  "layout": "HEAD + Sub-Heading + Loop Infographic",
+  "hidden": false,
+  "notes": []
+ },
+ "p11.s10": {
+  "pack": "11  -  Infographic.pptx",
+  "slide": 10,
+  "layout": "HEAD +  Cycle Infographic",
+  "hidden": false,
+  "notes": []
+ },
+ "p11.s11": {
+  "pack": "11  -  Infographic.pptx",
+  "slide": 11,
+  "layout": "4_Title Slide - ONE + Sub-Heading",
+  "hidden": false,
+  "notes": [],
+  "promoted": 5
+ },
+ "p11.h09": {
+  "pack": "11  -  Infographic.pptx",
+  "slide": null,
+  "layout": "HEAD + INTRO + Loop Infographic",
+  "hidden": true,
+  "notes": []
+ },
+ "p12.s02": {
+  "pack": "12  -  Devices.pptx",
+  "slide": 2,
+  "layout": "HEAD + Sub-head + Large Screengrab",
+  "hidden": false,
+  "notes": []
+ },
+ "p12.s03": {
+  "pack": "12  -  Devices.pptx",
+  "slide": 3,
+  "layout": "1_HEAD + Sub-head + Video",
+  "hidden": false,
+  "notes": []
+ },
+ "p12.s04": {
+  "pack": "12  -  Devices.pptx",
+  "slide": 4,
+  "layout": "HEAD + Sub + Intro + Large Screengrab",
+  "hidden": false,
+  "notes": []
+ },
+ "p12.s05": {
+  "pack": "12  -  Devices.pptx",
+  "slide": 5,
+  "layout": "HEAD + Sub-head + Med Screengrab",
+  "hidden": false,
+  "notes": []
+ },
+ "p12.s06": {
+  "pack": "12  -  Devices.pptx",
+  "slide": 6,
+  "layout": "HEAD + Sub-head + Small Screengrab",
+  "hidden": false,
+  "notes": []
+ },
+ "p12.s07": {
+  "pack": "12  -  Devices.pptx",
+  "slide": 7,
+  "layout": "1_HEAD + Laptop + Phone",
+  "hidden": false,
+  "notes": []
+ },
+ "p12.s08": {
+  "pack": "12  -  Devices.pptx",
+  "slide": 8,
+  "layout": "HEAD + INTRO + 1 Phone",
+  "hidden": false,
+  "notes": []
+ },
+ "p12.s09": {
+  "pack": "12  -  Devices.pptx",
+  "slide": 9,
+  "layout": "HEAD + INTRO + 1 x Phone Features",
+  "hidden": false,
+  "notes": []
+ },
+ "p12.s10": {
+  "pack": "12  -  Devices.pptx",
+  "slide": 10,
+  "layout": "HEAD + INTRO + 2 x Phones",
+  "hidden": false,
+  "notes": []
+ },
+ "p12.s11": {
+  "pack": "12  -  Devices.pptx",
+  "slide": 11,
+  "layout": "1_HEAD + 3 x Phones",
+  "hidden": false,
+  "notes": []
+ },
+ "p13.s02": {
+  "pack": "13  -  Stats.pptx",
+  "slide": 2,
+  "layout": "HEAD + Photo + 1 x Stat",
+  "hidden": false,
+  "notes": []
+ },
+ "p13.s03": {
+  "pack": "13  -  Stats.pptx",
+  "slide": 3,
+  "layout": "HEAD + 3 x Stat + Photos",
+  "hidden": false,
+  "notes": [],
+  "promoted": 3
+ },
+ "p13.s04": {
+  "pack": "13  -  Stats.pptx",
+  "slide": 4,
+  "layout": "1_HEAD + Photo + 4 x Stats",
+  "hidden": false,
+  "notes": []
+ },
+ "p13.s05": {
+  "pack": "13  -  Stats.pptx",
+  "slide": 5,
+  "layout": "HEAD + Sub-Head + 4 x Stats",
+  "hidden": false,
+  "notes": []
+ },
+ "p13.s06": {
+  "pack": "13  -  Stats.pptx",
+  "slide": 6,
+  "layout": "HEAD + Photos + 5 x Stats",
+  "hidden": false,
+  "notes": []
+ },
+ "p13.s07": {
+  "pack": "13  -  Stats.pptx",
+  "slide": 7,
+  "layout": "HEAD + 2 x Stats",
+  "hidden": false,
+  "notes": [],
+  "promoted": 1
+ },
+ "p13.s08": {
+  "pack": "13  -  Stats.pptx",
+  "slide": 8,
+  "layout": "HEAD + 3 x Stats",
+  "hidden": false,
+  "notes": []
+ },
+ "p13.s09": {
+  "pack": "13  -  Stats.pptx",
+  "slide": 9,
+  "layout": "HEAD + 5 x Stats",
+  "hidden": false,
+  "notes": []
+ },
+ "p13.s10": {
+  "pack": "13  -  Stats.pptx",
+  "slide": 10,
+  "layout": "HEAD + Sub-Head + 2 x Stats + Photos",
+  "hidden": false,
+  "notes": []
+ },
+ "p13.s11": {
+  "pack": "13  -  Stats.pptx",
+  "slide": 11,
+  "layout": "HEAD + Sub-Head + 3 x Stats",
+  "hidden": false,
+  "notes": []
+ },
+ "p13.s12": {
+  "pack": "13  -  Stats.pptx",
+  "slide": 12,
+  "layout": "1_HEAD + Sub-Head + 3 x Stats",
+  "hidden": false,
+  "notes": []
+ },
+ "p14.s02": {
+  "pack": "14  -  Why-Smollan.pptx",
+  "slide": 2,
+  "layout": "HEAD + SUB-HEAD + 4 x Pillars",
+  "hidden": false,
+  "notes": [],
+  "promoted": 8
+ },
+ "p14.s03": {
+  "pack": "14  -  Why-Smollan.pptx",
+  "slide": 3,
+  "layout": "HEAD + SUB-HEAD + Photos + 4 x Pillars",
+  "hidden": false,
+  "notes": [],
+  "promoted": 8
+ },
+ "p14.s04": {
+  "pack": "14  -  Why-Smollan.pptx",
+  "slide": 4,
+  "layout": "HEAD + Intro + Custom Differentiators",
+  "hidden": false,
+  "notes": [
+   "EDIT TABLES IN MASTER"
+  ],
+  "promoted": 8
+ },
+ "p14.s05": {
+  "pack": "14  -  Why-Smollan.pptx",
+  "slide": 5,
+  "layout": "HEAD + Photo + Intro + Custom Differentiators",
+  "hidden": false,
+  "notes": [
+   "EDIT TABLES IN MASTER"
+  ],
+  "promoted": 8
+ },
+ "p14.s06": {
+  "pack": "14  -  Why-Smollan.pptx",
+  "slide": 6,
+  "layout": "HEAD + Full Photo + Intro + Custom Differentiators",
+  "hidden": false,
+  "notes": [
+   "EDIT TABLES IN MASTER"
+  ],
+  "promoted": 8
+ },
+ "p14.s07": {
+  "pack": "14  -  Why-Smollan.pptx",
+  "slide": 7,
+  "layout": "HEAD + Shapes + Intro + Custom Differentiators",
+  "hidden": false,
+  "notes": [
+   "EDIT TABLES IN MASTER"
+  ],
+  "promoted": 8
+ }
+}
