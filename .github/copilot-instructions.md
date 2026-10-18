@@ -1,1 +1,1 @@
-Read AGENTS.md at the repository root before building or editing anything: it explains how to build Smollan-branded PowerPoint decks with smollan.py (recipes, Deck API, slot formats, rules).
+Read AGENTS.md at the repository root before building or editing anything. It explains how to build Smollan-branded PowerPoint decks with the smollan package (recipes, Deck API, JSON route, slot formats, rules).

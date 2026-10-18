@@ -90,7 +90,7 @@ def value_for(rid, name, spec, i=0):
                 "tasks": [{"label": f"MILESTONE {n}", "start": n, "end": n + 2} for n in range(1, 8)]}
     if k == "org":
         return TREE
-    if k == "video":
+    if k in ("video", "logo"):
         return None
     return text_for(spec, name, i)
 

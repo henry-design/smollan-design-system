@@ -1,0 +1,77 @@
+{
+  "deck": {
+    "title": "Q3 BUSINESS REVIEW\nACME FOODS",
+    "presenter": "Jane Doe, Client Lead",
+    "date": "OCTOBER 2026",
+    "client": "Acme Foods",
+    "cover": "cover.photo.merchandiser"
+  },
+  "slides": [
+    {
+      "recipe": "title.one_line_sub",
+      "heading": "AGENDA",
+      "subheading": "What we will cover today",
+      "body": ["Q3 performance", "How we delivered", "Your team", "Next steps"]
+    },
+    {
+      "recipe": "divider.dark_blue",
+      "heading": "Q3 PERFORMANCE",
+      "section": "SECTION 01"
+    },
+    {
+      "recipe": "stats.3",
+      "heading": "Q3 RESULTS AT A GLANCE",
+      "subheading": "Across 1,240 stores",
+      "items": [
+        {"label": "AVAILABILITY", "value": "96%", "text": "On-shelf availability, up 4 points on Q2."},
+        {"label": "SHARE OF SHELF", "value": "31%", "text": "Share of shelf in core categories."},
+        {"label": "COMPLIANCE", "value": "92%", "text": "Planogram compliance across key accounts."}
+      ]
+    },
+    {
+      "recipe": "graphs.1",
+      "heading": "HOW Q3 VALUE BUILT UP (R MILLION)",
+      "chart": {
+        "type": "waterfall",
+        "categories": ["Q2", "Volume", "Price", "Mix", "Promo cost", "Q3"],
+        "series": {"Value": [100, 12, 6, -3, -2, null]},
+        "totals": [0, 5]
+      }
+    },
+    {
+      "recipe": "tables.clean",
+      "heading": "PERFORMANCE BY ACCOUNT",
+      "intro": "Q3 actuals vs. target",
+      "table": {
+        "header": ["ACCOUNT", "OSA", "SHARE OF SHELF", "PROMO ON TIME"],
+        "rows": [["Retailer A", "97%", "33%", true], ["Retailer B", "95%", "30%", false]]
+      }
+    },
+    {
+      "recipe": "stats.1_photo",
+      "heading": "ONE NUMBER THAT MATTERS",
+      "value": "89%",
+      "label": "RESOLVED IN 48H",
+      "text": "Out-of-stocks fixed within two days.",
+      "photo": "asset:merchandiser_woman_shelf"
+    },
+    {
+      "recipe": "org.tree",
+      "heading": "YOUR TEAM",
+      "tree": {
+        "name": "Jane Doe", "role": "Client Lead",
+        "children": [
+          {"name": "Sipho Dlamini", "role": "Field Manager", "children": [{"name": "Ann Lee", "role": "Team Leader"}]},
+          {"name": "Maria Silva", "role": "Insights Lead"}
+        ]
+      }
+    },
+    {
+      "recipe": "thankyou.c",
+      "subheading": "NEXT STEPS",
+      "message": "Thank you for a strong quarter together.",
+      "body": ["Agree Q4 targets by 31 October", "Monthly performance reviews"]
+    }
+  ],
+  "output": "deck_from_json.pptx"
+}

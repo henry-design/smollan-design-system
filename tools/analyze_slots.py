@@ -8,8 +8,9 @@ chart / picture with geometry, font size, the template's own instruction text
 and an inferred ROLE (heading, subheading, intro, item heading, value, text,
 note, photo, chart, table...). Repeated blocks (same role + same size) are
 grouped into ITEMS in reading order. tools/gen_registry.py merges this with the
-hand-written curation (tools/curation.py) to produce the RECIPES in smollan.py.
+hand-written curation (tools/curation.py) to produce the RECIPES in smollan/recipes.py.
 """
+import hashlib
 import json
 import os
 import re
@@ -22,6 +23,8 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from smollan import MASTER_PATH  # noqa: E402
 
 E = 914400
+# "CLIENT LOGO GOES HERE - DELETE & ADD CLIENT LOGO" placeholder images used in the packs
+LOGO_IMAGES = {"2f5b81931b", "e38f73d330"}
 WORDNUM = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7,
            "eight": 8, "nine": 9, "ten": 10}
 DECOR = re.compile(r"^(\W*#\W*|WINNING AT THE POINT OF PURCHASE.*|0?\d{1,2}\.?|SMOLLAN|)$", re.S)
@@ -189,6 +192,11 @@ def main():
         lp = layout_prompts(s.slide_layout)
         els = []
         for sh in s.shapes:
+            if sh.shape_type == 13 and not sh.is_placeholder and                     hashlib.sha1(sh.image.blob).hexdigest()[:10] in LOGO_IMAGES:
+                els.append({"ref": f"id:{sh.shape_id}", "id": sh.shape_id, "kind": "shape", "role": "logo",
+                            "x": inch(sh.left), "y": inch(sh.top), "w": inch(sh.width), "h": inch(sh.height),
+                            "prompt": "client logo (optional)"})
+                continue
             d = describe_shape(sh, lp, s)
             if d["kind"] in ("shape", "group") and (not d.get("example") or DECOR.match(d["example"])):
                 continue
@@ -215,7 +223,7 @@ def main():
                             "prompt": text_of(ph)[:200], "size": font_size(ph._element, 24), "max_lines": line_limit(text_of(ph)),
                             "layout_only": True})
         out[key] = {"layout": s.slide_layout.name, "elements": els, "items": group_items(els)}
-    path = os.path.join(os.path.dirname(MASTER_PATH), "tools", "auto_specs.json")
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "auto_specs.json")
     with open(path, "w", encoding="utf-8") as f:
         json.dump(out, f, indent=1, ensure_ascii=False)
     print("wrote", path, len(out))

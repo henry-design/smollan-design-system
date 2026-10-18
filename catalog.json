@@ -811,6 +811,11 @@
      "cap": 1,
      "hint": "default 'RFP RESPONSE'",
      "keep": true
+    },
+    "logo": {
+     "ref": "id:12",
+     "kind": "logo",
+     "hint": "client logo image (optional; removed if omitted)"
     }
    },
    "items": null
@@ -2134,6 +2139,11 @@
      "table": {
       "header_rows": 2
      }
+    },
+    "logo": {
+     "ref": "id:7",
+     "kind": "logo",
+     "hint": "client logo image (optional; removed if omitted)"
     }
    },
    "items": null,
@@ -2181,6 +2191,11 @@
      "ref": "id:4",
      "kind": "gantt",
      "hint": "{'periods': ['1',...,'12'], 'tasks': [{'label': 'MILESTONE', 'start': 1, 'end': 3}], 'corner': 'WEEK'}"
+    },
+    "logo": {
+     "ref": "id:7",
+     "kind": "logo",
+     "hint": "client logo image (optional; removed if omitted)"
     }
    },
    "items": null
@@ -2358,6 +2373,11 @@
      "ref": "ph:41",
      "kind": "table",
      "hint": "template grid 8 rows x 10 cols; first row: - | HEADING A | HEADING B | HEADING C | RETAIL | FRANCHISE | WHOLESALE | LIQUOR | PHARMACY | INDEPENDENT"
+    },
+    "logo": {
+     "ref": "id:6",
+     "kind": "logo",
+     "hint": "client logo image (optional; removed if omitted)"
     }
    },
    "items": null,
@@ -2402,6 +2422,11 @@
      "ref": "ph:41",
      "kind": "table",
      "hint": "template grid 8 rows x 10 cols; first row: - | HEADING A | HEADING B | HEADING C | RETAIL | FRANCHISE | WHOLESALE | LIQUOR | PHARMACY | INDEPENDENT"
+    },
+    "logo": {
+     "ref": "id:6",
+     "kind": "logo",
+     "hint": "client logo image (optional; removed if omitted)"
     }
    },
    "items": null,
@@ -2478,6 +2503,11 @@
       "header_rows": 2,
       "fixed": true
      }
+    },
+    "logo": {
+     "ref": "id:13",
+     "kind": "logo",
+     "hint": "client logo image (optional; removed if omitted)"
     }
    },
    "items": null,
@@ -2642,6 +2672,11 @@
      "table": {
       "header_rows": 2
      }
+    },
+    "logo": {
+     "ref": "id:5",
+     "kind": "logo",
+     "hint": "client logo image (optional; removed if omitted)"
     }
    },
    "items": null,
@@ -2755,6 +2790,11 @@
      "ref": "ph:39",
      "kind": "table",
      "hint": "template grid 11 rows x 6 cols; first row: SECTION | One | Two | Three | Four | Five"
+    },
+    "logo": {
+     "ref": "id:6",
+     "kind": "logo",
+     "hint": "client logo image (optional; removed if omitted)"
     }
    },
    "items": null,
@@ -2890,6 +2930,11 @@
      "table": {
       "header_rows": 1
      }
+    },
+    "logo": {
+     "ref": "id:6",
+     "kind": "logo",
+     "hint": "client logo image (optional; removed if omitted)"
     }
    },
    "items": null,
@@ -3376,6 +3421,11 @@
       "header_rows": 1,
       "fixed": true
      }
+    },
+    "logo": {
+     "ref": "id:5",
+     "kind": "logo",
+     "hint": "client logo image (optional; removed if omitted)"
     }
    },
    "items": null,
@@ -3418,6 +3468,11 @@
       "header_rows": 1,
       "fixed": true
      }
+    },
+    "logo": {
+     "ref": "id:5",
+     "kind": "logo",
+     "hint": "client logo image (optional; removed if omitted)"
     }
    },
    "items": null,
@@ -3461,6 +3516,11 @@
       "header_rows": 2,
       "fixed": true
      }
+    },
+    "logo": {
+     "ref": "id:11",
+     "kind": "logo",
+     "hint": "client logo image (optional; removed if omitted)"
     }
    },
    "items": null,
@@ -3836,6 +3896,11 @@
      "cpl": 172,
      "cap": 1,
      "hint": "* Any notes go here"
+    },
+    "logo": {
+     "ref": "id:7",
+     "kind": "logo",
+     "hint": "client logo image (optional; removed if omitted)"
     }
    },
    "items": {

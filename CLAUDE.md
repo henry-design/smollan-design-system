@@ -1,4 +1,5 @@
 # Instructions for AI agents
 
 Read [AGENTS.md](AGENTS.md) before doing anything. It is the complete operating manual for building
-Smollan decks with `smollan.py` (setup, workflow, API, slot formats, rules and a worked example).
+Smollan PowerPoint decks with the `smollan` package: setup, workflow, API, JSON route, slot formats,
+rules and worked examples. Deeper references are in [docs/](docs/).

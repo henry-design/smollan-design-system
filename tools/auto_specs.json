@@ -1049,6 +1049,17 @@
     "max_lines": null,
     "ref": "ph:13",
     "role": "text"
+   },
+   {
+    "ref": "id:12",
+    "id": 12,
+    "kind": "shape",
+    "role": "logo",
+    "x": 11.42,
+    "y": 5.45,
+    "w": 1.23,
+    "h": 0.56,
+    "prompt": "client logo (optional)"
    }
   ],
   "items": null
@@ -3072,6 +3083,17 @@
     "role": "table"
    },
    {
+    "ref": "id:7",
+    "id": 7,
+    "kind": "shape",
+    "role": "logo",
+    "x": 0.64,
+    "y": 6.85,
+    "w": 0.99,
+    "h": 0.45,
+    "prompt": "client logo (optional)"
+   },
+   {
     "ref": "ph:41",
     "ph": 41,
     "kind": "ph",
@@ -3294,6 +3316,17 @@
     ],
     "ref": "id:4",
     "role": "table"
+   },
+   {
+    "ref": "id:7",
+    "id": 7,
+    "kind": "shape",
+    "role": "logo",
+    "x": 0.64,
+    "y": 6.85,
+    "w": 0.99,
+    "h": 0.45,
+    "prompt": "client logo (optional)"
    },
    {
     "ref": "ph:41",
@@ -3894,6 +3927,17 @@
     "max_lines": null,
     "ref": "ph:40",
     "role": "subheading"
+   },
+   {
+    "ref": "id:6",
+    "id": 6,
+    "kind": "shape",
+    "role": "logo",
+    "x": 0.64,
+    "y": 6.85,
+    "w": 0.99,
+    "h": 0.45,
+    "prompt": "client logo (optional)"
    }
   ],
   "items": null
@@ -4051,6 +4095,17 @@
     "max_lines": null,
     "ref": "ph:40",
     "role": "subheading"
+   },
+   {
+    "ref": "id:6",
+    "id": 6,
+    "kind": "shape",
+    "role": "logo",
+    "x": 0.64,
+    "y": 6.85,
+    "w": 0.99,
+    "h": 0.45,
+    "prompt": "client logo (optional)"
    }
   ],
   "items": null
@@ -4207,6 +4262,17 @@
     "max_lines": 1,
     "ref": "ph:0",
     "role": "heading"
+   },
+   {
+    "ref": "id:13",
+    "id": 13,
+    "kind": "shape",
+    "role": "logo",
+    "x": 0.64,
+    "y": 6.85,
+    "w": 0.99,
+    "h": 0.45,
+    "prompt": "client logo (optional)"
    }
   ],
   "items": null
@@ -4790,6 +4856,17 @@
     "max_lines": 1,
     "ref": "ph:0",
     "role": "heading"
+   },
+   {
+    "ref": "id:5",
+    "id": 5,
+    "kind": "shape",
+    "role": "logo",
+    "x": 0.64,
+    "y": 1.54,
+    "w": 0.99,
+    "h": 0.45,
+    "prompt": "client logo (optional)"
    }
   ],
   "items": null
@@ -5131,6 +5208,17 @@
     "max_lines": 1,
     "ref": "ph:44",
     "role": "intro"
+   },
+   {
+    "ref": "id:6",
+    "id": 6,
+    "kind": "shape",
+    "role": "logo",
+    "x": 0.64,
+    "y": 6.85,
+    "w": 0.99,
+    "h": 0.45,
+    "prompt": "client logo (optional)"
    }
   ],
   "items": null
@@ -6803,6 +6891,17 @@
     "max_lines": 1,
     "ref": "ph:0",
     "role": "heading"
+   },
+   {
+    "ref": "id:5",
+    "id": 5,
+    "kind": "shape",
+    "role": "logo",
+    "x": 0.64,
+    "y": 1.54,
+    "w": 0.99,
+    "h": 0.45,
+    "prompt": "client logo (optional)"
    }
   ],
   "items": null
@@ -6926,6 +7025,17 @@
     "max_lines": 1,
     "ref": "ph:0",
     "role": "heading"
+   },
+   {
+    "ref": "id:5",
+    "id": 5,
+    "kind": "shape",
+    "role": "logo",
+    "x": 0.64,
+    "y": 1.54,
+    "w": 0.99,
+    "h": 0.45,
+    "prompt": "client logo (optional)"
    }
   ],
   "items": null
@@ -7101,6 +7211,17 @@
     "max_lines": 1,
     "ref": "ph:0",
     "role": "heading"
+   },
+   {
+    "ref": "id:11",
+    "id": 11,
+    "kind": "shape",
+    "role": "logo",
+    "x": 0.64,
+    "y": 1.7,
+    "w": 0.99,
+    "h": 0.45,
+    "prompt": "client logo (optional)"
    }
   ],
   "items": null
@@ -7849,6 +7970,17 @@
     "max_lines": null,
     "ref": "ph:48",
     "role": "text"
+   },
+   {
+    "ref": "id:7",
+    "id": 7,
+    "kind": "shape",
+    "role": "logo",
+    "x": 0.64,
+    "y": 7.09,
+    "w": 0.97,
+    "h": 0.3,
+    "prompt": "client logo (optional)"
    }
   ],
   "items": {

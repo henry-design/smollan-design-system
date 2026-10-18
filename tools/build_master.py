@@ -27,7 +27,9 @@ from pptx.opc.constants import RELATIONSHIP_TYPE as RT
 from pptx.oxml.ns import qn
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from smollan import MASTER_PATH, PartCopier, _add_slide_part, _dedupe_partnames, _renumber_shape_ids, _strip_unused_rels  # noqa: E402
+from smollan._opc import (PartCopier, _add_slide_part, _dedupe_partnames, _renumber_shape_ids,  # noqa: E402
+                          _strip_unused_rels)
+from smollan.config import MASTER_PATH  # noqa: E402
 
 PACKS = [  # (code, file name, slides to skip besides slide 1)
     ("core", "Smollan_Core-Template_2024.pptx", []),
@@ -219,7 +221,7 @@ def main(src_dir, only=None, promote=True, out=None):
         v.pop("_lay", None)
     _dedupe_partnames(dest.part.package)
     dest.save(out or MASTER_PATH)
-    with open(os.path.join(os.path.dirname(MASTER_PATH), "tools", "build_info.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "build_info.json"), "w", encoding="utf-8") as f:
         json.dump(info, f, indent=1, ensure_ascii=False)
     print(f"saved {MASTER_PATH}: {len(dest.slides)} template slides, "
           f"{len(master.slide_layouts)} layouts")

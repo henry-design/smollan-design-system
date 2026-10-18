@@ -1,20 +1,27 @@
 # Smollan Design System
 
-> Python library that builds Smollan-branded, editable PowerPoint decks. Every official Smollan slide design (190 recipes in 16 categories: covers, dividers, title slides, stats, KPIs, process, infographics, info buckets, charts, tables, org charts, client feedback, device mockups, Why Smollan, thank-you, closing) is available as a recipe. An agent picks a recipe for each message, then calls `Deck().add(recipe_id, **slots)` and `deck.save(path)`.
+> Installable Python package (`pip install git+https://github.com/henry-design/smollan-design-system`) that builds Smollan-branded, editable PowerPoint decks. Every official Smollan slide design (190 recipes in 16 categories: covers, dividers, title slides, stats, KPIs, process, infographics, info buckets, charts, tables, org charts, client feedback, device mockups, Why Smollan, thank-you, closing) is a recipe. An agent picks a recipe per message and calls `Deck().add(recipe_id, **slots)` then `deck.save(path)` - or writes a JSON spec and runs `smollan build deck.json`.
 
-Start with AGENTS.md: it is the complete operating manual (setup, workflow, API, slot value formats, rules, example).
+Start with AGENTS.md: the complete operating manual (setup, workflow, API, slot value formats, JSON route, rules, examples).
 
 ## Docs
-- [AGENTS.md](AGENTS.md): how an AI agent should use this repo (read first)
+- [AGENTS.md](AGENTS.md): how an AI agent should use this package (read first)
+- [docs/getting-started.md](docs/getting-started.md): install and first deck
+- [docs/concepts.md](docs/concepts.md): recipes, slots, items, limits, guard-rails
+- [docs/content-formats.md](docs/content-formats.md): exact formats for text, photos, charts, tables, gantt, org charts, video
+- [docs/json-spec.md](docs/json-spec.md): build decks from JSON via the CLI
+- [docs/api-reference.md](docs/api-reference.md): every function, class and CLI command
+- [docs/troubleshooting.md](docs/troubleshooting.md): every error message and its fix
 - [CATALOG.md](CATALOG.md): every recipe with thumbnail, slots, limits and an example call
 - [catalog.json](catalog.json): machine-readable recipe specs
-- [README.md](README.md): overview, setup, maintenance pipeline, known limits
 
 ## Code
-- [smollan.py](smollan.py): the library and CLI (`python smollan.py list | show <id> | find <words>`)
-- [examples/demo.py](examples/demo.py): worked 13-slide deck
+- [smollan/__init__.py](smollan/__init__.py): public API
+- [smollan/deck.py](smollan/deck.py): Deck
+- [smollan/recipes.py](smollan/recipes.py): generated registry of all recipes (summary index at the top)
+- [examples/demo.py](examples/demo.py): worked 13-slide deck; [examples/deck_spec.json](examples/deck_spec.json): JSON version
 
 ## Optional
+- [docs/architecture.md](docs/architecture.md): how it works internally
+- [docs/maintenance.md](docs/maintenance.md): rebuild from the original PPT packs, edit recipes
 - [thumbnails/](thumbnails/): one preview PNG per recipe id
-- [assets/photos/index.json](assets/photos/index.json): opt-in stock photo library
-- [tools/](tools/): rebuild pipeline from the original PPT packs

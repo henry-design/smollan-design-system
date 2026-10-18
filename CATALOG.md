@@ -1,8 +1,8 @@
 # Smollan Design System - Slide Catalog
 
-190 slide recipes across 16 categories. Every recipe is one on-brand slide that `smollan.py` fills with your content.
+190 slide recipes across 16 categories. Every recipe is one on-brand slide that the `smollan` Python package fills with your content.
 
-**How to use:** pick a recipe below (or `find('what you want to show')`), check its slots with `show('<id>')`, then `deck.add('<id>', **slots)`. See the top of `smollan.py` for the full API.
+**How to use:** pick a recipe below (or `find('what you want to show')`), check its slots with `show('<id>')`, then `deck.add('<id>', **slots)`. AI agents: start with [AGENTS.md](AGENTS.md); people: see [docs/](docs/).
 
 ## Quick picker
 
@@ -249,7 +249,8 @@ deck.add("cover.photo.shelf_curve",
 | `subheading` | text | fits ~1 line, ~35 chars/line | Edit Subheading here |
 | `client` | text | fits ~1 line, ~21 chars/line | client name |
 | `date` | text | fits ~1 line, ~15 chars/line | e.g. 18 OCTOBER 2026 |
-| `label` | text | fits ~1 line, ~20 chars/line | default 'RFP RESPONSE' |
+| `label` | text | fits ~1 line, ~20 chars/line, optional - keeps Smollan wording | default 'RFP RESPONSE' |
+| `logo` | logo |  | client logo image (optional; removed if omitted) |
 
 ```python
 deck.add("cover.photo.rfp_client",
@@ -258,6 +259,7 @@ deck.add("cover.photo.rfp_client",
     client='Client text',
     date='Date text',
     label='Label text',
+    logo='path/to/client_logo.png',
 )
 ```
 
@@ -788,9 +790,9 @@ Thank-you slides with a personal message and next steps.
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~1 line, ~10 chars/line | default 'THANK YOU' |
+| `heading` | text | fits ~1 line, ~10 chars/line, optional - keeps Smollan wording | default 'THANK YOU' |
 | `subheading` | text | fits ~1 line, ~70 chars/line | e.g. NEXT STEPS |
-| `heading_2` | text | max 1 line, ~25 chars/line | default 'FOR THE OPPORTUNITY' |
+| `heading_2` | text | max 1 line, ~25 chars/line, optional - keeps Smollan wording | default 'FOR THE OPPORTUNITY' |
 | `message` | text | max 9 lines, ~40 chars/line | short personal message |
 | `body` | text | fits ~15 lines, ~89 chars/line | paragraphs or bullets |
 
@@ -816,9 +818,9 @@ deck.add("thankyou.a",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~1 line, ~10 chars/line | default 'THANK YOU' |
+| `heading` | text | fits ~1 line, ~10 chars/line, optional - keeps Smollan wording | default 'THANK YOU' |
 | `subheading` | text | fits ~1 line, ~66 chars/line | e.g. NEXT STEPS |
-| `heading_2` | text | max 1 line, ~25 chars/line | default 'FOR THE OPPORTUNITY' |
+| `heading_2` | text | max 1 line, ~25 chars/line, optional - keeps Smollan wording | default 'FOR THE OPPORTUNITY' |
 | `message` | text | max 9 lines, ~33 chars/line | short personal message |
 | `body` | text | fits ~15 lines, ~84 chars/line | paragraphs or bullets |
 
@@ -844,8 +846,8 @@ deck.add("thankyou.c",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~1 line, ~10 chars/line | default 'THANK YOU' |
-| `heading_2` | text | max 1 line, ~25 chars/line | default 'FOR THE OPPORTUNITY' |
+| `heading` | text | fits ~1 line, ~10 chars/line, optional - keeps Smollan wording | default 'THANK YOU' |
+| `heading_2` | text | max 1 line, ~25 chars/line, optional - keeps Smollan wording | default 'FOR THE OPPORTUNITY' |
 | `message` | text | max 9 lines, ~40 chars/line | short personal message |
 | `body` | text | fits ~17 lines, ~89 chars/line | paragraphs or bullets |
 
@@ -870,9 +872,9 @@ deck.add("thankyou.a_1",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~1 line, ~10 chars/line | default 'THANK YOU' |
+| `heading` | text | fits ~1 line, ~10 chars/line, optional - keeps Smollan wording | default 'THANK YOU' |
 | `subheading` | text | fits ~1 line, ~66 chars/line | e.g. NEXT STEPS |
-| `heading_2` | text | max 1 line, ~25 chars/line | default 'FOR THE OPPORTUNITY' |
+| `heading_2` | text | max 1 line, ~25 chars/line, optional - keeps Smollan wording | default 'FOR THE OPPORTUNITY' |
 | `message` | text | max 9 lines, ~33 chars/line | short personal message |
 | `body` | text | fits ~15 lines, ~84 chars/line | paragraphs or bullets |
 
@@ -898,8 +900,8 @@ deck.add("thankyou.a_2",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~1 line, ~10 chars/line | default 'THANK YOU' |
-| `heading_2` | text | max 1 line, ~25 chars/line | default 'FOR THE OPPORTUNITY' |
+| `heading` | text | fits ~1 line, ~10 chars/line, optional - keeps Smollan wording | default 'THANK YOU' |
+| `heading_2` | text | max 1 line, ~25 chars/line, optional - keeps Smollan wording | default 'FOR THE OPPORTUNITY' |
 | `message` | text | max 9 lines, ~33 chars/line | short personal message |
 | `body` | text | fits ~17 lines, ~84 chars/line | paragraphs or bullets |
 
@@ -924,9 +926,9 @@ deck.add("thankyou.a_3",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~1 line, ~10 chars/line | default 'THANK YOU' |
+| `heading` | text | fits ~1 line, ~10 chars/line, optional - keeps Smollan wording | default 'THANK YOU' |
 | `subheading` | text | fits ~1 line, ~70 chars/line | e.g. NEXT STEPS |
-| `heading_2` | text | max 1 line, ~25 chars/line | default 'FOR THE OPPORTUNITY' |
+| `heading_2` | text | max 1 line, ~25 chars/line, optional - keeps Smollan wording | default 'FOR THE OPPORTUNITY' |
 | `message` | text | max 9 lines, ~40 chars/line | short personal message |
 | `body` | text | fits ~15 lines, ~89 chars/line | paragraphs or bullets |
 
@@ -952,8 +954,8 @@ deck.add("thankyou.b_1",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~1 line, ~10 chars/line | default 'THANK YOU' |
-| `heading_2` | text | max 1 line, ~25 chars/line | default 'FOR THE OPPORTUNITY' |
+| `heading` | text | fits ~1 line, ~10 chars/line, optional - keeps Smollan wording | default 'THANK YOU' |
+| `heading_2` | text | max 1 line, ~25 chars/line, optional - keeps Smollan wording | default 'FOR THE OPPORTUNITY' |
 | `message` | text | max 9 lines, ~40 chars/line | short personal message |
 | `body` | text | fits ~17 lines, ~89 chars/line | paragraphs or bullets |
 
@@ -978,9 +980,9 @@ deck.add("thankyou.b_2",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~1 line, ~10 chars/line | default 'THANK YOU' |
+| `heading` | text | fits ~1 line, ~10 chars/line, optional - keeps Smollan wording | default 'THANK YOU' |
 | `subheading` | text | fits ~1 line, ~66 chars/line | e.g. NEXT STEPS |
-| `heading_2` | text | max 1 line, ~25 chars/line | default 'FOR THE OPPORTUNITY' |
+| `heading_2` | text | max 1 line, ~25 chars/line, optional - keeps Smollan wording | default 'FOR THE OPPORTUNITY' |
 | `message` | text | max 9 lines, ~33 chars/line | short personal message |
 | `body` | text | fits ~15 lines, ~84 chars/line | paragraphs or bullets |
 
@@ -1006,8 +1008,8 @@ deck.add("thankyou.b_3",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~1 line, ~10 chars/line | default 'THANK YOU' |
-| `heading_2` | text | max 1 line, ~25 chars/line | default 'FOR THE OPPORTUNITY' |
+| `heading` | text | fits ~1 line, ~10 chars/line, optional - keeps Smollan wording | default 'THANK YOU' |
+| `heading_2` | text | max 1 line, ~25 chars/line, optional - keeps Smollan wording | default 'FOR THE OPPORTUNITY' |
 | `message` | text | max 9 lines, ~33 chars/line | short personal message |
 | `body` | text | fits ~17 lines, ~84 chars/line | paragraphs or bullets |
 
@@ -1032,9 +1034,9 @@ deck.add("thankyou.b_4",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~1 line, ~10 chars/line | default 'THANK YOU' |
+| `heading` | text | fits ~1 line, ~10 chars/line, optional - keeps Smollan wording | default 'THANK YOU' |
 | `subheading` | text | fits ~1 line, ~70 chars/line | e.g. NEXT STEPS |
-| `heading_2` | text | max 1 line, ~25 chars/line | default 'FOR THE OPPORTUNITY' |
+| `heading_2` | text | max 1 line, ~25 chars/line, optional - keeps Smollan wording | default 'FOR THE OPPORTUNITY' |
 | `message` | text | max 9 lines, ~40 chars/line | short personal message |
 | `body` | text | fits ~15 lines, ~89 chars/line | paragraphs or bullets |
 
@@ -1060,8 +1062,8 @@ deck.add("thankyou.c_2",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~1 line, ~10 chars/line | default 'THANK YOU' |
-| `heading_2` | text | max 1 line, ~25 chars/line | default 'FOR THE OPPORTUNITY' |
+| `heading` | text | fits ~1 line, ~10 chars/line, optional - keeps Smollan wording | default 'THANK YOU' |
+| `heading_2` | text | max 1 line, ~25 chars/line, optional - keeps Smollan wording | default 'FOR THE OPPORTUNITY' |
 | `message` | text | max 9 lines, ~40 chars/line | short personal message |
 | `body` | text | fits ~17 lines, ~89 chars/line | paragraphs or bullets |
 
@@ -1086,8 +1088,8 @@ deck.add("thankyou.c_4",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~1 line, ~10 chars/line | default 'THANK YOU' |
-| `heading_2` | text | max 1 line, ~25 chars/line | default 'FOR THE OPPORTUNITY' |
+| `heading` | text | fits ~1 line, ~10 chars/line, optional - keeps Smollan wording | default 'THANK YOU' |
+| `heading_2` | text | max 1 line, ~25 chars/line, optional - keeps Smollan wording | default 'FOR THE OPPORTUNITY' |
 | `message` | text | max 9 lines, ~33 chars/line | short personal message |
 | `body` | text | fits ~17 lines, ~84 chars/line | paragraphs or bullets |
 
@@ -1112,9 +1114,9 @@ deck.add("thankyou.c_7",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~1 line, ~10 chars/line | default 'THANK YOU' |
+| `heading` | text | fits ~1 line, ~10 chars/line, optional - keeps Smollan wording | default 'THANK YOU' |
 | `subheading` | text | fits ~1 line, ~70 chars/line | e.g. NEXT STEPS |
-| `heading_2` | text | max 1 line, ~25 chars/line | default 'FOR THE OPPORTUNITY' |
+| `heading_2` | text | max 1 line, ~25 chars/line, optional - keeps Smollan wording | default 'FOR THE OPPORTUNITY' |
 | `message` | text | max 9 lines, ~40 chars/line | short personal message |
 | `body` | text | fits ~15 lines, ~89 chars/line | paragraphs or bullets |
 
@@ -1140,8 +1142,8 @@ deck.add("thankyou.c_3",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~1 line, ~10 chars/line | default 'THANK YOU' |
-| `heading_2` | text | max 1 line, ~25 chars/line | default 'FOR THE OPPORTUNITY' |
+| `heading` | text | fits ~1 line, ~10 chars/line, optional - keeps Smollan wording | default 'THANK YOU' |
+| `heading_2` | text | max 1 line, ~25 chars/line, optional - keeps Smollan wording | default 'FOR THE OPPORTUNITY' |
 | `message` | text | max 9 lines, ~40 chars/line | short personal message |
 | `body` | text | fits ~17 lines, ~89 chars/line | paragraphs or bullets |
 
@@ -1166,9 +1168,9 @@ deck.add("thankyou.c_5",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~1 line, ~10 chars/line | default 'THANK YOU' |
+| `heading` | text | fits ~1 line, ~10 chars/line, optional - keeps Smollan wording | default 'THANK YOU' |
 | `subheading` | text | fits ~1 line, ~66 chars/line | e.g. NEXT STEPS |
-| `heading_2` | text | max 1 line, ~25 chars/line | default 'FOR THE OPPORTUNITY' |
+| `heading_2` | text | max 1 line, ~25 chars/line, optional - keeps Smollan wording | default 'FOR THE OPPORTUNITY' |
 | `message` | text | max 9 lines, ~33 chars/line | short personal message |
 | `body` | text | fits ~15 lines, ~84 chars/line | paragraphs or bullets |
 
@@ -1194,8 +1196,8 @@ deck.add("thankyou.c_8",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~1 line, ~10 chars/line | default 'THANK YOU' |
-| `heading_2` | text | max 1 line, ~25 chars/line | default 'FOR THE OPPORTUNITY' |
+| `heading` | text | fits ~1 line, ~10 chars/line, optional - keeps Smollan wording | default 'THANK YOU' |
+| `heading_2` | text | max 1 line, ~25 chars/line, optional - keeps Smollan wording | default 'FOR THE OPPORTUNITY' |
 | `message` | text | max 9 lines, ~33 chars/line | short personal message |
 | `body` | text | fits ~17 lines, ~84 chars/line | paragraphs or bullets |
 
@@ -1741,7 +1743,7 @@ deck.add("kpis.7",
 | slot | kind | limit | what goes here |
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | INSERT YOUR ONE LINE HEADING HERE |
-| `table` | table |  | template grid 5 rows x 2 cols; first row: OBJECTIVE | KEY RESULT |
+| `table` | table | 1 header row(s), FIXED grid | template grid 5 rows x 2 cols; first row: OBJECTIVE | KEY RESULT |
 | `items[4].note` | text | max 5 lines, ~44 chars/line | Insert your text here. No longer than 5 lines maximum. Insert your tex... |
 
 ```python
@@ -1767,7 +1769,7 @@ deck.add("kpis.table",
 | slot | kind | limit | what goes here |
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | INSERT YOUR ONE LINE HEADING HERE |
-| `table` | table |  | template grid 9 rows x 7 cols (merged cells); first row: STRATEGIC PRIORITI | KPI | - | WEIGHTING | TARGET | YTD | - |
+| `table` | table | 2 header row(s), 1 footer row(s), FIXED grid | template grid 9 rows x 7 cols (merged cells); first row: STRATEGIC PRIORITI | KPI | - | WEIGHTING | TARGET | YTD | - |
 
 ```python
 deck.add("kpis.strategic_table",
@@ -2392,7 +2394,7 @@ deck.add("infographic.pivot_point",
 | `circle_top` | text | fits ~1 line, ~11 chars/line | TECHNOLOGY |
 | `circle_left` | text | fits ~1 line, ~11 chars/line | PEOPLE |
 | `circle_right` | text | fits ~1 line, ~11 chars/line | DATA |
-| `centre` | text | fits ~4 lines, ~18 chars/line | PEOPLE ENABLED BY TECHNOLOGY, DIRECTED BY INSIGHTS |
+| `centre` | text | fits ~4 lines, ~18 chars/line, optional - keeps Smollan wording | PEOPLE ENABLED BY TECHNOLOGY, DIRECTED BY INSIGHTS |
 | `outer_left` | text | fits ~2 lines, ~12 chars/line | FIELD FORCE AUTOMATION |
 | `outer_right` | text | fits ~3 lines, ~12 chars/line | DATA MANAGEMENT PLATFORM |
 | `outer_bottom` | text | fits ~2 lines, ~18 chars/line | RESOURCE ALLOCATION & DECISION MAKING |
@@ -3127,6 +3129,7 @@ deck.add("graphs.2_desc",
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
 | `text` | text | max 1 line, ~148 chars/line | Insert descriptor text here. No longer than 1 line maximum. Insert des... |
 | `note` | text | fits ~1 line, ~172 chars/line | * Any notes go here |
+| `logo` | logo |  | client logo image (optional; removed if omitted) |
 | `items[2].chart` | chart |  | Insert Graph |
 
 ```python
@@ -3134,6 +3137,7 @@ deck.add("graphs.2_notes",
     heading='YOUR HEADING',
     text='Text text',
     note='Note text',
+    logo='path/to/client_logo.png',
     items=[{'chart': {'type': 'column', 'categories': ['Q1', 'Q2', 'Q3'], 'series': {'2026': [4.1, 5.2, 6.3]}}},  # x2
            ...],
 )
@@ -3238,7 +3242,7 @@ deck.add("graphs.text_left_sub",
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
 | `subheading` | text | fits ~1 line, ~60 chars/line | CLICK TO ADD SUB-HEADING |
 | `chart` | chart |  | Insert Graph |
-| `label` | text | fits ~1 line, ~24 chars/line | default 'KEY TAKEAWAYS' |
+| `label` | text | fits ~1 line, ~24 chars/line, optional - keeps Smollan wording | default 'KEY TAKEAWAYS' |
 | `body` | text | fits ~9 lines, ~32 chars/line | Click to edit Master text styles Second level |
 | `note_1` | text | fits ~3 lines, ~33 chars/line | Short Graph descriptor goes here… Short Graph descriptor goes here… Sh... |
 | `note_2` | text | fits ~3 lines, ~33 chars/line | Short Graph descriptor goes here… Short Graph descriptor goes here… Sh... |
@@ -3387,7 +3391,8 @@ Styled tables: comparison grids, tick matrices, gantt, scenario tables (incl. Gr
 | `subheading` | text | fits ~1 line, ~41 chars/line | Click to edit Sub-heading |
 | `intro` | text | max 2 lines, ~148 chars/line | Introductory text goes here. No longer than 2 lines maximum. Introduct... |
 | `body` | text | fits ~21 lines, ~39 chars/line | Click to edit Master text styles Second level |
-| `table` | table |  | template grid 11 rows x 4 cols; first row: Heading 1 | Heading 2 | Heading 3 | Heading 4 |
+| `table` | table | 2 header row(s), rows/cols flexible | template grid 11 rows x 4 cols; first row: Heading 1 | Heading 2 | Heading 3 | Heading 4 |
+| `logo` | logo |  | client logo image (optional; removed if omitted) |
 
 ```python
 deck.add("tables.text_table",
@@ -3396,6 +3401,7 @@ deck.add("tables.text_table",
     intro='Intro text',
     body='Body text',
     table={'header': ['COLUMN A', 'COLUMN B'], 'rows': [['Row 1', 'Value'], ['Row 2', 'Value']]},
+    logo='path/to/client_logo.png',
 )
 ```
 
@@ -3414,12 +3420,14 @@ deck.add("tables.text_table",
 | `heading` | text | max 1 line, ~46 chars/line | CLICK TO INSERT ONE LINE HEADING |
 | `intro` | text | max 2 lines, ~148 chars/line | Introductory text goes here. No longer than 2 lines maximum. Introduct... |
 | `gantt` | gantt |  | {'periods': ['1',...,'12'], 'tasks': [{'label': 'MILESTONE', 'start': 1, 'end': 3}], 'corner': 'WEEK'} |
+| `logo` | logo |  | client logo image (optional; removed if omitted) |
 
 ```python
 deck.add("tables.gantt",
     heading='YOUR HEADING',
     intro='Intro text',
     gantt={'periods': ['1', '2', '3', '4'], 'tasks': [{'label': 'KICK-OFF', 'start': 1, 'end': 2}]},
+    logo='path/to/client_logo.png',
 )
 ```
 
@@ -3438,7 +3446,7 @@ deck.add("tables.gantt",
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
 | `subheading` | text | fits ~1 line, ~60 chars/line | CLICK TO ADD SUB-HEADING |
-| `table` | table |  | template grid 17 rows x 10 cols; first row: DIVISION | CLUSTER | RETAILER B NATIONA | RETAILER L NATIONA | RETAILER F NATIONA | RETAILER C NATIONA | RETAILER A NATIONA | RETAILER D NATIONA | XX NATIONAL | GRAND TOTAL |
+| `table` | table | 1 header row(s), 1 footer row(s), FIXED grid | template grid 17 rows x 10 cols; first row: DIVISION | CLUSTER | RETAILER B NATIONA | RETAILER L NATIONA | RETAILER F NATIONA | RETAILER C NATIONA | RETAILER A NATIONA | RETAILER D NATIONA | XX NATIONAL | GRAND TOTAL |
 
 ```python
 deck.add("tables.region_totals",
@@ -3463,7 +3471,7 @@ deck.add("tables.region_totals",
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
 | `subheading` | text | fits ~1 line, ~60 chars/line | CLICK TO ADD SUB-HEADING |
-| `table` | table |  | template grid 3 rows x 5 cols; first row: HEADING A | HEADING 1 | HEADING 2 | HEADING 3 | HEADING 4 |
+| `table` | table | 1 header row(s), FIXED grid | template grid 3 rows x 5 cols; first row: HEADING A | HEADING 1 | HEADING 2 | HEADING 3 | HEADING 4 |
 
 ```python
 deck.add("tables.abc_matrix",
@@ -3487,7 +3495,7 @@ deck.add("tables.abc_matrix",
 | slot | kind | limit | what goes here |
 |---|---|---|---|
 | `heading` | text | max 1 line, ~64 chars/line | CLICK TO INSERT ONE LINE HEADING |
-| `table` | table |  | template grid 7 rows x 2 cols (merged cells); first row: OPPORTUNITIES / FY | - |
+| `table` | table | 1 header row(s), rows/cols flexible | template grid 7 rows x 2 cols (merged cells); first row: OPPORTUNITIES / FY | - |
 
 ```python
 deck.add("tables.numbered_list",
@@ -3511,13 +3519,15 @@ deck.add("tables.numbered_list",
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
 | `subheading` | text | fits ~1 line, ~60 chars/line | CLICK TO ADD SUB-HEADING |
-| `table` | table |  | template grid 8 rows x 10 cols; first row: - | HEADING A | HEADING B | HEADING C | RETAIL | FRANCHISE | WHOLESALE | LIQUOR | PHARMACY | INDEPENDENT |
+| `table` | table | 1 header row(s), rows/cols flexible | template grid 8 rows x 10 cols; first row: - | HEADING A | HEADING B | HEADING C | RETAIL | FRANCHISE | WHOLESALE | LIQUOR | PHARMACY | INDEPENDENT |
+| `logo` | logo |  | client logo image (optional; removed if omitted) |
 
 ```python
 deck.add("tables.tick_matrix",
     heading='YOUR HEADING',
     subheading='Subheading text',
     table={'header': ['COLUMN A', 'COLUMN B'], 'rows': [['Row 1', 'Value'], ['Row 2', 'Value']]},
+    logo='path/to/client_logo.png',
 )
 ```
 
@@ -3536,13 +3546,15 @@ deck.add("tables.tick_matrix",
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
 | `subheading` | text | fits ~1 line, ~60 chars/line | CLICK TO ADD SUB-HEADING |
-| `table` | table |  | template grid 8 rows x 10 cols; first row: - | HEADING A | HEADING B | HEADING C | RETAIL | FRANCHISE | WHOLESALE | LIQUOR | PHARMACY | INDEPENDENT |
+| `table` | table | 1 header row(s), rows/cols flexible | template grid 8 rows x 10 cols; first row: - | HEADING A | HEADING B | HEADING C | RETAIL | FRANCHISE | WHOLESALE | LIQUOR | PHARMACY | INDEPENDENT |
+| `logo` | logo |  | client logo image (optional; removed if omitted) |
 
 ```python
 deck.add("tables.tick_matrix_b",
     heading='YOUR HEADING',
     subheading='Subheading text',
     table={'header': ['COLUMN A', 'COLUMN B'], 'rows': [['Row 1', 'Value'], ['Row 2', 'Value']]},
+    logo='path/to/client_logo.png',
 )
 ```
 
@@ -3560,7 +3572,7 @@ deck.add("tables.tick_matrix_b",
 | slot | kind | limit | what goes here |
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
-| `table` | table |  | template grid 5 rows x 3 cols; first row: - | 1 | TEAM ORGANIZATION |
+| `table` | table | 1 header row(s), rows/cols flexible | template grid 5 rows x 3 cols; first row: - | 1 | TEAM ORGANIZATION |
 
 ```python
 deck.add("tables.contents",
@@ -3583,12 +3595,14 @@ deck.add("tables.contents",
 | slot | kind | limit | what goes here |
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
-| `table` | table |  | template grid 5 rows x 7 cols (merged cells); first row: - | - | DC TO STORE | IN-STORE EXECUTION | - | INFLUENCING OFF-TA | - |
+| `table` | table | 2 header row(s), FIXED grid | template grid 5 rows x 7 cols (merged cells); first row: - | - | DC TO STORE | IN-STORE EXECUTION | - | INFLUENCING OFF-TA | - |
+| `logo` | logo |  | client logo image (optional; removed if omitted) |
 
 ```python
 deck.add("tables.measure_optimise",
     heading='YOUR HEADING',
     table={'header': ['COLUMN A', 'COLUMN B'], 'rows': [['Row 1', 'Value'], ['Row 2', 'Value']]},
+    logo='path/to/client_logo.png',
 )
 ```
 
@@ -3608,7 +3622,7 @@ deck.add("tables.measure_optimise",
 | `heading` | text | max 1 line, ~46 chars/line | CLICK TO INSERT ONE LINE HEADING |
 | `items[2].title` | text | fits ~1 line, ~71 chars/line | Table 1 : Title here |
 | `items[2].intro` | text | max 2 lines, ~68 chars/line | Intro text goes here, over two lines maximum…Intro text goes here, ove... |
-| `items[2].table` | table |  | template grid 10 rows x 4 cols; first row: - | Heading 2 | Heading 3 | Heading 4 |
+| `items[2].table` | table | 1 header row(s), rows/cols flexible | template grid 10 rows x 4 cols; first row: - | Heading 2 | Heading 3 | Heading 4 |
 
 ```python
 deck.add("tables.two_tables_text",
@@ -3633,8 +3647,8 @@ deck.add("tables.two_tables_text",
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
 | `intro` | text | max 2 lines, ~148 chars/line | Insert introductory text here. No longer than 2 lines maximum. Insert ... |
-| `table` | table |  | template grid 10 rows x 4 cols; first row: - | Heading 1 | Heading 2 | Heading 3 |
-| `table_2` | table |  | template grid 10 rows x 4 cols; first row: Heading 1 | Heading 2 | Heading 3 | Heading 4 |
+| `table` | table | 1 header row(s), 1 footer row(s), rows/cols flexible | template grid 10 rows x 4 cols; first row: - | Heading 1 | Heading 2 | Heading 3 |
+| `table_2` | table | 1 header row(s), 1 footer row(s), rows/cols flexible | template grid 10 rows x 4 cols; first row: Heading 1 | Heading 2 | Heading 3 | Heading 4 |
 
 ```python
 deck.add("tables.two_tables",
@@ -3659,12 +3673,14 @@ deck.add("tables.two_tables",
 | slot | kind | limit | what goes here |
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
-| `table` | table |  | template grid 14 rows x 5 cols; first row: - | Option 1 | Option 2 | Option 3 | Option 4 |
+| `table` | table | 2 header row(s), rows/cols flexible | template grid 14 rows x 5 cols; first row: - | Option 1 | Option 2 | Option 3 | Option 4 |
+| `logo` | logo |  | client logo image (optional; removed if omitted) |
 
 ```python
 deck.add("tables.option_compare",
     heading='YOUR HEADING',
     table={'header': ['COLUMN A', 'COLUMN B'], 'rows': [['Row 1', 'Value'], ['Row 2', 'Value']]},
+    logo='path/to/client_logo.png',
 )
 ```
 
@@ -3686,7 +3702,7 @@ deck.add("tables.option_compare",
 | `intro` | text | max 1 line, ~148 chars/line | Insert introductory text here. No longer than 1 line maximum. Insert i... |
 | `body_left` | text | fits ~4 lines, ~61 chars/line | Click to edit Master text styles |
 | `body_right` | text | fits ~5 lines, ~67 chars/line | Click to edit Master text styles Second level |
-| `table` | table |  | template grid 7 rows x 9 cols; first row: - | Heading 1 | - | Heading 2 | - | Heading 3 | - | Heading 4 | - |
+| `table` | table | 1 header row(s), 1 footer row(s), rows/cols flexible | template grid 7 rows x 9 cols; first row: - | Heading 1 | - | Heading 2 | - | Heading 3 | - | Heading 4 | - |
 
 ```python
 deck.add("tables.kpi_values",
@@ -3714,13 +3730,15 @@ deck.add("tables.kpi_values",
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
 | `intro` | text | max 1 line, ~148 chars/line | Insert introductory text here. No longer than 1 line maximum. Insert i... |
-| `table` | table |  | template grid 11 rows x 6 cols; first row: SECTION | One | Two | Three | Four | Five |
+| `table` | table | 1 header row(s), rows/cols flexible | template grid 11 rows x 6 cols; first row: SECTION | One | Two | Three | Four | Five |
+| `logo` | logo |  | client logo image (optional; removed if omitted) |
 
 ```python
 deck.add("tables.dot_matrix",
     heading='YOUR HEADING',
     intro='Intro text',
     table={'header': ['COLUMN A', 'COLUMN B'], 'rows': [['Row 1', 'Value'], ['Row 2', 'Value']]},
+    logo='path/to/client_logo.png',
 )
 ```
 
@@ -3739,7 +3757,7 @@ deck.add("tables.dot_matrix",
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
 | `intro` | text | max 1 line, ~148 chars/line | Insert introductory text here. No longer than 1 line maximum. Insert i... |
-| `table` | table |  | template grid 11 rows x 6 cols (merged cells); first row: ` | - | Details | % | - | Percent |
+| `table` | table | 1 header row(s), FIXED grid | template grid 11 rows x 6 cols (merged cells); first row: ` | - | Details | % | - | Percent |
 
 ```python
 deck.add("tables.progress_list",
@@ -3763,7 +3781,7 @@ deck.add("tables.progress_list",
 | slot | kind | limit | what goes here |
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
-| `table` | table |  | template grid 10 rows x 3 cols; first row: 1 | Heading Text goes  |  |
+| `table` | table | 0 header row(s), rows/cols flexible | template grid 10 rows x 3 cols; first row: 1 | Heading Text goes  |  |
 
 ```python
 deck.add("tables.numbered_steps",
@@ -3787,13 +3805,15 @@ deck.add("tables.numbered_steps",
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
 | `intro` | text | max 1 line, ~148 chars/line | Insert introductory text here. No longer than 1 line maximum. Insert i... |
-| `table` | table |  | template grid 11 rows x 6 cols; first row: SECTION | One | Two | Three | Four | Five |
+| `table` | table | 1 header row(s), rows/cols flexible | template grid 11 rows x 6 cols; first row: SECTION | One | Two | Three | Four | Five |
+| `logo` | logo |  | client logo image (optional; removed if omitted) |
 
 ```python
 deck.add("tables.clean",
     heading='YOUR HEADING',
     intro='Intro text',
     table={'header': ['COLUMN A', 'COLUMN B'], 'rows': [['Row 1', 'Value'], ['Row 2', 'Value']]},
+    logo='path/to/client_logo.png',
 )
 ```
 
@@ -3814,7 +3834,7 @@ deck.add("tables.clean",
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
 | `intro` | text | max 2 lines, ~148 chars/line | Insert introductory text here. No longer than 2 lines maximum. Insert ... |
-| `table` | table |  | template grid 6 rows x 6 cols (merged cells); first row: - | YEAR | COST P/A | HOURS OF SERVICE | STORE COVERAGE | COMMENTS |
+| `table` | table | 1 header row(s), FIXED grid | template grid 6 rows x 6 cols (merged cells); first row: - | YEAR | COST P/A | HOURS OF SERVICE | STORE COVERAGE | COMMENTS |
 
 ```python
 deck.add("tables.gt_year_costs",
@@ -3841,7 +3861,7 @@ deck.add("tables.gt_year_costs",
 |---|---|---|---|
 | `heading` | text | max 2 lines, ~33 chars/line | CLICK TO INSERT TWO LINE HEADING CLICK TO INSERT TWO LINE HEADING HERE |
 | `intro` | text | max 1 line, ~148 chars/line | Insert introductory text here. No longer than 1 line maximum. Insert i... |
-| `table` | table |  | template grid 6 rows x 6 cols (merged cells); first row: - | YEAR | COST P/A | HOURS OF SERVICE | STORE COVERAGE | COMMENTS |
+| `table` | table | 1 header row(s), FIXED grid | template grid 6 rows x 6 cols (merged cells); first row: - | YEAR | COST P/A | HOURS OF SERVICE | STORE COVERAGE | COMMENTS |
 
 ```python
 deck.add("tables.gt_year_costs_2line",
@@ -3867,7 +3887,7 @@ deck.add("tables.gt_year_costs_2line",
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
 | `subheading` | text | fits ~1 line, ~63 chars/line | CLICK TO ADD SUB-HEADING |
-| `table` | table |  | template grid 7 rows x 8 cols (merged cells); first row: CATEGORY | SERVICE OFFERED CU | SHELF PACKING | REPLENISHMENT (INC | MERCHANDISING (INC | SALES REQUIRED SAL | POS CAPABILITY | ADHOC* AUDIT CAPAB |
+| `table` | table | 1 header row(s), FIXED grid | template grid 7 rows x 8 cols (merged cells); first row: CATEGORY | SERVICE OFFERED CU | SHELF PACKING | REPLENISHMENT (INC | MERCHANDISING (INC | SALES REQUIRED SAL | POS CAPABILITY | ADHOC* AUDIT CAPAB |
 
 ```python
 deck.add("tables.gt_service_matrix",
@@ -3892,7 +3912,7 @@ deck.add("tables.gt_service_matrix",
 | slot | kind | limit | what goes here |
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
-| `table` | table |  | template grid 9 rows x 8 cols (merged cells); first row: FOCUS AREA | OBJECTIVE | HOW WE MEASURE | NO. OF STORES | FREQUENCY OF MEASU | TIME TAKEN PER STO | HOW WE WILL REPORT | HOW OFTEN DO WE RE |
+| `table` | table | 1 header row(s), FIXED grid | template grid 9 rows x 8 cols (merged cells); first row: FOCUS AREA | OBJECTIVE | HOW WE MEASURE | NO. OF STORES | FREQUENCY OF MEASU | TIME TAKEN PER STO | HOW WE WILL REPORT | HOW OFTEN DO WE RE |
 
 ```python
 deck.add("tables.gt_enable_basics",
@@ -3916,8 +3936,8 @@ deck.add("tables.gt_enable_basics",
 | slot | kind | limit | what goes here |
 |---|---|---|---|
 | `heading` | text | max 1 line, ~46 chars/line | CLICK TO INSERT ONE LINE HEADING |
-| `table` | table |  | template grid 3 rows x 2 cols (merged cells); first row: NATIONAL APPROACH | - |
-| `table_2` | table |  | template grid 3 rows x 2 cols (merged cells); first row: REGIONAL APPROACH | - |
+| `table` | table | 1 header row(s), FIXED grid | template grid 3 rows x 2 cols (merged cells); first row: NATIONAL APPROACH | - |
+| `table_2` | table | 1 header row(s), FIXED grid | template grid 3 rows x 2 cols (merged cells); first row: REGIONAL APPROACH | - |
 
 ```python
 deck.add("tables.gt_pros_cons",
@@ -3944,7 +3964,7 @@ deck.add("tables.gt_pros_cons",
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
 | `subheading` | text | fits ~1 line, ~60 chars/line | CLICK TO ADD SUB-HEADING |
-| `table` | table |  | template grid 11 rows x 8 cols; first row: SECTION | Merchandising | Field marketing | Field Management S | DC Support | Multi Level Engage | Return Support | Analysis of Report |
+| `table` | table | 1 header row(s), rows/cols flexible | template grid 11 rows x 8 cols; first row: SECTION | Merchandising | Field marketing | Field Management S | DC Support | Multi Level Engage | Return Support | Analysis of Report |
 
 ```python
 deck.add("tables.gt_capability_dots",
@@ -3971,7 +3991,7 @@ deck.add("tables.gt_capability_dots",
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
 | `subheading` | text | fits ~1 line, ~60 chars/line | CLICK TO ADD SUB-HEADING |
-| `table` | table |  | template grid 11 rows x 8 cols; first row: SECTION | Merchandising | Field marketing | Field Management S | DC Support | Multi Level Engage | Return Support | Analysis of Report |
+| `table` | table | 1 header row(s), rows/cols flexible | template grid 11 rows x 8 cols; first row: SECTION | Merchandising | Field marketing | Field Management S | DC Support | Multi Level Engage | Return Support | Analysis of Report |
 
 ```python
 deck.add("tables.gt_capability_dots_centred",
@@ -3997,7 +4017,7 @@ deck.add("tables.gt_capability_dots_centred",
 | slot | kind | limit | what goes here |
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
-| `table` | table |  | template grid 7 rows x 12 cols (merged cells); first row: NATIONAL GROUP | - | Eastern Cape | Free State | Gauteng | KwaZulu Natal | Mpumalanga | Northern Cape | Northern Province | North-West | Western Cape | TOTAL HOURS |
+| `table` | table | 1 header row(s), 1 footer row(s), FIXED grid | template grid 7 rows x 12 cols (merged cells); first row: NATIONAL GROUP | - | Eastern Cape | Free State | Gauteng | KwaZulu Natal | Mpumalanga | Northern Cape | Northern Province | North-West | Western Cape | TOTAL HOURS |
 
 ```python
 deck.add("tables.gt_hours_region",
@@ -4023,7 +4043,7 @@ deck.add("tables.gt_hours_region",
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
 | `subheading` | text | fits ~1 line, ~60 chars/line | CLICK TO ADD SUB-HEADING |
-| `table` | table |  | template grid 19 rows x 5 cols (merged cells); first row: NATIONAL GROUP | - | ROLE NEEDED | WEEKLY HOURS | % OF HOURS |
+| `table` | table | 1 header row(s), 1 footer row(s), FIXED grid | template grid 19 rows x 5 cols (merged cells); first row: NATIONAL GROUP | - | ROLE NEEDED | WEEKLY HOURS | % OF HOURS |
 
 ```python
 deck.add("tables.gt_resource_callage",
@@ -4048,12 +4068,14 @@ deck.add("tables.gt_resource_callage",
 | slot | kind | limit | what goes here |
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
-| `table` | table |  | template grid 8 rows x 6 cols (merged cells); first row: - | Current | SCENARIO 1 | SCENARIO 2 | SCENARIO 3 | SCENARIO 4 |
+| `table` | table | 1 header row(s), FIXED grid | template grid 8 rows x 6 cols (merged cells); first row: - | Current | SCENARIO 1 | SCENARIO 2 | SCENARIO 3 | SCENARIO 4 |
+| `logo` | logo |  | client logo image (optional; removed if omitted) |
 
 ```python
 deck.add("tables.gt_scenarios",
     heading='YOUR HEADING',
     table={'header': ['COLUMN A', 'COLUMN B'], 'rows': [['Row 1', 'Value'], ['Row 2', 'Value']]},
+    logo='path/to/client_logo.png',
 )
 ```
 
@@ -4073,12 +4095,14 @@ deck.add("tables.gt_scenarios",
 | slot | kind | limit | what goes here |
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
-| `table` | table |  | template grid 10 rows x 6 cols (merged cells); first row: - | Current | SCENARIO 1 | SCENARIO 2 | SCENARIO 3 | SCENARIO 4 |
+| `table` | table | 1 header row(s), FIXED grid | template grid 10 rows x 6 cols (merged cells); first row: - | Current | SCENARIO 1 | SCENARIO 2 | SCENARIO 3 | SCENARIO 4 |
+| `logo` | logo |  | client logo image (optional; removed if omitted) |
 
 ```python
 deck.add("tables.gt_scenarios_colour",
     heading='YOUR HEADING',
     table={'header': ['COLUMN A', 'COLUMN B'], 'rows': [['Row 1', 'Value'], ['Row 2', 'Value']]},
+    logo='path/to/client_logo.png',
 )
 ```
 
@@ -4098,12 +4122,14 @@ deck.add("tables.gt_scenarios_colour",
 | slot | kind | limit | what goes here |
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
-| `table` | table |  | template grid 12 rows x 9 cols (merged cells); first row: - | - | - | OPTION 1 | - | OPTION 2 | - | OPTION 3 | - |
+| `table` | table | 2 header row(s), FIXED grid | template grid 12 rows x 9 cols (merged cells); first row: - | - | - | OPTION 1 | - | OPTION 2 | - | OPTION 3 | - |
+| `logo` | logo |  | client logo image (optional; removed if omitted) |
 
 ```python
 deck.add("tables.gt_structure_options",
     heading='YOUR HEADING',
     table={'header': ['COLUMN A', 'COLUMN B'], 'rows': [['Row 1', 'Value'], ['Row 2', 'Value']]},
+    logo='path/to/client_logo.png',
 )
 ```
 
@@ -4123,7 +4149,7 @@ deck.add("tables.gt_structure_options",
 | slot | kind | limit | what goes here |
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
-| `table` | table |  | template grid 9 rows x 5 cols (merged cells); first row: - | - | IMPROVEMENTS / ENH | (Current) | NEW |
+| `table` | table | 1 header row(s), FIXED grid | template grid 9 rows x 5 cols (merged cells); first row: - | - | IMPROVEMENTS / ENH | (Current) | NEW |
 
 ```python
 deck.add("tables.gt_structure_ratios",
@@ -4147,7 +4173,7 @@ deck.add("tables.gt_structure_ratios",
 | slot | kind | limit | what goes here |
 |---|---|---|---|
 | `heading` | text | max 1 line, ~50 chars/line | CLICK TO INSERT ONE LINE HEADING |
-| `table` | table |  | template grid 7 rows x 4 cols (merged cells); first row: ESTIMATED COST | - | WHAT IS INCLUDED C | KEY BENEFITS Incre |
+| `table` | table | 1 header row(s), FIXED grid | template grid 7 rows x 4 cols (merged cells); first row: ESTIMATED COST | - | WHAT IS INCLUDED C | KEY BENEFITS Incre |
 
 ```python
 deck.add("tables.gt_commercials",
@@ -4951,12 +4977,12 @@ Client survey feedback: quote + survey bar chart + action-plan date.
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~2 lines, ~13 chars/line | default 'YOUR FEEDBACK HELPS US DRIVE' |
-| `heading_2` | text | fits ~1 line, ~11 chars/line | default 'IMPROVEMENT' |
-| `survey_label` | text | fits ~1 line, ~21 chars/line | default 'Smollan Client Survey' |
+| `heading` | text | fits ~2 lines, ~13 chars/line, optional - keeps Smollan wording | default 'YOUR FEEDBACK HELPS US DRIVE' |
+| `heading_2` | text | fits ~1 line, ~11 chars/line, optional - keeps Smollan wording | default 'IMPROVEMENT' |
+| `survey_label` | text | fits ~1 line, ~21 chars/line, optional - keeps Smollan wording | default 'Smollan Client Survey' |
 | `year` | text | fits ~1 line, ~20 chars/line | survey year |
 | `quote` | text | fits ~8 lines, ~58 chars/line | client verbatim(s) - list of 1-3 quotes |
-| `action_plan` | text | fits ~5 lines, ~20 chars/line | default 'Our Action Plan will be presented back to you on:' |
+| `action_plan` | text | fits ~5 lines, ~20 chars/line, optional - keeps Smollan wording | default 'Our Action Plan will be presented back to you on:' |
 | `action_date` | text | fits ~1 line, ~22 chars/line | e.g. 25 SEPTEMBER 2026 |
 | `chart` | chart |  | Insert Chart |
 
@@ -4986,12 +5012,12 @@ deck.add("feedback.chart_quote",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~2 lines, ~13 chars/line | default 'YOUR FEEDBACK HELPS US DRIVE' |
-| `heading_2` | text | fits ~1 line, ~11 chars/line | default 'IMPROVEMENT' |
-| `survey_label` | text | fits ~1 line, ~21 chars/line | default 'Smollan Client Survey' |
+| `heading` | text | fits ~2 lines, ~13 chars/line, optional - keeps Smollan wording | default 'YOUR FEEDBACK HELPS US DRIVE' |
+| `heading_2` | text | fits ~1 line, ~11 chars/line, optional - keeps Smollan wording | default 'IMPROVEMENT' |
+| `survey_label` | text | fits ~1 line, ~21 chars/line, optional - keeps Smollan wording | default 'Smollan Client Survey' |
 | `year` | text | fits ~1 line, ~20 chars/line | survey year |
 | `quote` | text | fits ~8 lines, ~83 chars/line | client verbatim(s) - list of 1-3 quotes |
-| `action_plan` | text | fits ~5 lines, ~20 chars/line | default 'Our Action Plan will be presented back to you on:' |
+| `action_plan` | text | fits ~5 lines, ~20 chars/line, optional - keeps Smollan wording | default 'Our Action Plan will be presented back to you on:' |
 | `action_date` | text | fits ~1 line, ~22 chars/line | e.g. 25 SEPTEMBER 2026 |
 | `chart` | chart |  | Insert Chart |
 
@@ -5021,12 +5047,12 @@ deck.add("feedback.chart_numbered",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~1 line, ~22 chars/line | default 'YOUR FEEDBACK HELPS US DRIVE' |
-| `heading_2` | text | fits ~1 line, ~16 chars/line | default 'IMPROVEMENT' |
+| `heading` | text | fits ~1 line, ~22 chars/line, optional - keeps Smollan wording | default 'YOUR FEEDBACK HELPS US DRIVE' |
+| `heading_2` | text | fits ~1 line, ~16 chars/line, optional - keeps Smollan wording | default 'IMPROVEMENT' |
 | `quote` | text | fits ~8 lines, ~77 chars/line | client verbatim(s) - list of 1-3 quotes |
 | `chart` | chart |  | Insert Chart |
 | `photo` | photo |  | Insert Image |
-| `action_plan` | text | fits ~4 lines, ~22 chars/line | default 'Our Action Plan will be presented back to you on:' |
+| `action_plan` | text | fits ~4 lines, ~22 chars/line, optional - keeps Smollan wording | default 'Our Action Plan will be presented back to you on:' |
 | `action_date` | text | fits ~1 line, ~28 chars/line | e.g. 25 SEPTEMBER 2026 |
 
 ```python
@@ -5054,9 +5080,9 @@ deck.add("feedback.photo",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~1 line, ~22 chars/line | default 'YOUR FEEDBACK HELPS US DRIVE' |
-| `heading_2` | text | fits ~1 line, ~16 chars/line | default 'IMPROVEMENT' |
-| `action_plan` | text | fits ~5 lines, ~22 chars/line | default 'Our Action Plan will be presented back to you on:' |
+| `heading` | text | fits ~1 line, ~22 chars/line, optional - keeps Smollan wording | default 'YOUR FEEDBACK HELPS US DRIVE' |
+| `heading_2` | text | fits ~1 line, ~16 chars/line, optional - keeps Smollan wording | default 'IMPROVEMENT' |
+| `action_plan` | text | fits ~5 lines, ~22 chars/line, optional - keeps Smollan wording | default 'Our Action Plan will be presented back to you on:' |
 | `action_date` | text | fits ~1 line, ~25 chars/line | e.g. 25 SEPTEMBER 2026 |
 | `chart` | chart |  |  |
 | `quote` | text | fits ~22 lines, ~36 chars/line | client verbatim(s) - list of 1-3 quotes |
@@ -5407,7 +5433,7 @@ Why Smollan: 4 pillars and custom differentiator grids.
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~1 line, ~40 chars/line | WHAT MAKES SMOLLAN UNIQUE? |
+| `heading` | text | fits ~1 line, ~40 chars/line, optional - keeps Smollan wording | WHAT MAKES SMOLLAN UNIQUE? |
 | `subheading` | text | fits ~1 line, ~48 chars/line | CLICK TO ADD SUB-HEADING |
 | `items[4].heading` | text | fits ~2 lines, ~15 chars/line | AN EXCEPTIONAL OFFER |
 | `items[4].text` | text | fits ~3 lines, ~20 chars/line | A broad range of services and integrated solutions |
@@ -5434,8 +5460,8 @@ deck.add("why.pillars",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | fits ~1 line, ~40 chars/line | WHAT MAKES SMOLLAN UNIQUE? |
-| `subheading` | text | fits ~1 line, ~48 chars/line | WINNING AT THE POINT OF PURCHASE, IN-STORE AND ONLINE |
+| `heading` | text | fits ~1 line, ~40 chars/line, optional - keeps Smollan wording | WHAT MAKES SMOLLAN UNIQUE? |
+| `subheading` | text | fits ~1 line, ~48 chars/line, optional - keeps Smollan wording | WINNING AT THE POINT OF PURCHASE, IN-STORE AND ONLINE |
 | `items[4].photo` | photo |  | Add photo |
 | `items[4].heading` | text | fits ~2 lines, ~17 chars/line | AN EXCEPTIONAL OFFER |
 | `items[4].text` | text | fits ~3 lines, ~20 chars/line | A broad range of services and integrated solutions |
@@ -5461,7 +5487,7 @@ deck.add("why.pillars_photos",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | max 2 lines, ~14 chars/line | default 'WHAT MAKES SMOLLAN UNIQUE?' |
+| `heading` | text | max 2 lines, ~14 chars/line, optional - keeps Smollan wording | default 'WHAT MAKES SMOLLAN UNIQUE?' |
 | `intro` | text | fits ~3 lines, ~32 chars/line | client-specific intro paragraph |
 | `items[8].heading` | text | max 2 lines | default 'WHAT MAKES SMOLLAN UNIQUE?' |
 | `items[8].text` | text | max 3 lines |  |
@@ -5487,7 +5513,7 @@ deck.add("why.differentiators",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | max 2 lines, ~14 chars/line | default 'WHAT MAKES SMOLLAN UNIQUE?' |
+| `heading` | text | max 2 lines, ~14 chars/line, optional - keeps Smollan wording | default 'WHAT MAKES SMOLLAN UNIQUE?' |
 | `intro` | text | fits ~3 lines, ~32 chars/line | client-specific intro paragraph |
 | `items[8].heading` | text | max 2 lines | default 'WHAT MAKES SMOLLAN UNIQUE?' |
 | `items[8].text` | text | max 3 lines |  |
@@ -5513,7 +5539,7 @@ deck.add("why.differentiators_photo",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | max 2 lines, ~14 chars/line | default 'WHAT MAKES SMOLLAN UNIQUE?' |
+| `heading` | text | max 2 lines, ~14 chars/line, optional - keeps Smollan wording | default 'WHAT MAKES SMOLLAN UNIQUE?' |
 | `intro` | text | fits ~3 lines, ~37 chars/line | client-specific intro paragraph |
 | `items[8].heading` | text | max 2 lines | default 'WHAT MAKES SMOLLAN UNIQUE?' |
 | `items[8].text` | text | max 3 lines |  |
@@ -5539,7 +5565,7 @@ deck.add("why.differentiators_full_photo",
 
 | slot | kind | limit | what goes here |
 |---|---|---|---|
-| `heading` | text | max 2 lines, ~14 chars/line | default 'WHAT MAKES SMOLLAN UNIQUE?' |
+| `heading` | text | max 2 lines, ~14 chars/line, optional - keeps Smollan wording | default 'WHAT MAKES SMOLLAN UNIQUE?' |
 | `intro` | text | fits ~3 lines, ~32 chars/line | client-specific intro paragraph |
 | `items[8].heading` | text | max 2 lines | default 'WHAT MAKES SMOLLAN UNIQUE?' |
 | `items[8].text` | text | max 3 lines |  |

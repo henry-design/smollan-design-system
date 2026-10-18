@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smollan"
+version = "1.0.0"
+description = "Smollan PowerPoint design system as code: 190 on-brand slide recipes an AI agent can pick and fill."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["python-pptx>=1.0", "lxml>=4.9", "Pillow>=9.0"]
+keywords = ["powerpoint", "pptx", "python-pptx", "design-system", "presentation", "ai-agents"]
+
+[project.urls]
+Homepage = "https://github.com/henry-design/smollan-design-system"
+Documentation = "https://github.com/henry-design/smollan-design-system/blob/main/AGENTS.md"
+
+[project.scripts]
+smollan = "smollan:main"
+
+[tool.setuptools]
+packages = ["smollan"]
+include-package-data = false
+
+[tool.setuptools.package-data]
+smollan = ["smollan_master.pptx", "assets/photos/*", "assets/fonts/*"]
