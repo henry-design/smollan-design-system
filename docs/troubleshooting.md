@@ -22,6 +22,9 @@ Every `SmollanError` message tells you what to change. This page explains each o
 | `chart needs "categories" and "series"` | pass both. See [content-formats.md](content-formats.md#charts) |
 | `chart series 'X' has 3 values for 4 categories` | give every series one value per category |
 | `unknown chart type 'columns'` | use one of `column bar line line_plain pie doughnut stacked_column stacked_100 stacked_bar stacked_bar_100 area stacked_area waterfall` |
+| `pie charts hold max 8 slices; you passed 9` | group the smallest categories into "Other", or use `"type": "bar"` |
+| `a pie chart shows one series; you passed 2` | use `"type": "doughnut"` (rings), two charts (`graphs.2_intro`), or a bar chart |
+| `doughnut values cannot be negative` / `is all zero` | pies and doughnuts show shares of a positive total. Use a bar or waterfall chart |
 | `this table preset has 1 header row(s); you passed 2` | match the header and footer row counts shown by `show()` |
 | `this table preset has a fixed structure: N body rows x C columns` | pass exactly that grid, or use `tables.clean` |
 | `this table preset has merged cells, so its C columns are fixed` | pass C values per row, or use `tables.clean` |

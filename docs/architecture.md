@@ -55,7 +55,9 @@ so there are no import cycles. Generated data (`recipes.py`) is kept apart from 
      the model for each level.
    - **photo**: reset to the layout's picture placeholder and insert the image, cropped to fill.
    - **chart**: `replace_data` on the template chart when the type matches; otherwise a new
-     native chart is created and styled.
+     native chart is created and styled. Pie and doughnut charts also get brand colours for slices
+     beyond the template's examples, a legend normalised to show every category, and labels set at
+     both plot and series level.
    - **table**: clone or remove rows and columns, then write cells, reusing the template's tick
      and dot runs.
    - **org**: remove the placeholder and draw boxes and connectors in its area.
@@ -65,7 +67,8 @@ so there are no import cycles. Generated data (`recipes.py`) is kept apart from 
 
 ## What happens in `deck.save(path)`
 
-Add the closing slide, delete all template slides, delete unused layouts (which removes their
+If anything fails while filling, the half-built slide is removed before the error is raised.
+On save: add the closing slide, delete all template slides, delete unused layouts (which removes their
 images from the file), make part names unique, write the file, then run the preflight scan.
 
 ## How the registry was made

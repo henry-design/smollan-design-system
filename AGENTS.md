@@ -77,7 +77,7 @@ counts are exact.**
 |---|---|
 | text | `str`, or `list[str]` = paragraphs/bullets. `"- "` prefix = indented bullet, `"\n"` = line break, `**bold**` = emphasis. Numbers as strings (`"96%"`) |
 | photo | image path or `assets.photo("<name>")` (JSON: `"asset:<name>"`). Cropped to fill. Omit = empty slot |
-| chart | `{"categories": [...], "series": {"Name": [numbers]}, "type": opt, "title": opt, "labels": opt}`. **Omit `type` to keep the template chart's styling.** Types: `column bar line line_plain pie doughnut stacked_column stacked_100 stacked_bar stacked_bar_100 area stacked_area waterfall`. Waterfall: one series + `"totals": [indexes]`, `None` = running total |
+| chart | `{"categories": [...], "series": {"Name": [numbers]}, "type": opt, "title": opt, "labels": opt}`. **Omit `type` to keep the template chart's styling.** Types: `column bar line line_plain pie doughnut stacked_column stacked_100 stacked_bar stacked_bar_100 area stacked_area waterfall`. Waterfall: one series + `"totals": [indexes]`, `None` = running total. Pie/doughnut: max 8 slices, positive values, pie = 1 series (doughnut = rings), `"labels": "percent"` for shares |
 | table | `{"header": [...], "rows": [[...]], "footer": [...]}`. Cells: str, list, `True` = tick/dot, `False` = cross. `show()` says if the grid is flexible or **FIXED** (fixed = pass exactly the template grid described in the hint) |
 | gantt | `{"periods": [...], "tasks": [{"label", "start", "end"}], "corner": "WEEK"}` (`tables.gantt`) |
 | org | `{"name", "role", "photo"?, "children": [...]}`. Max 5 levels / 8 across; bigger means split by branch |

@@ -76,51 +76,55 @@ class Deck:
         part = self._copier.copy(tmpl.part, redirect={id(tmpl.slide_layout.part): tmpl.slide_layout.part})
         _add_slide_part(self.prs, part)
         slide = self.prs.slides[-1]
-        slide._element.cSld.set("name", rid)
-        n_slide = len(self.prs.slides) - self._n_templates
-        filled, empty_photos = set(), []
-        for name, spec in r["slots"].items():
-            val = content.get(name)
-            if val is not None and val != "":
-                self._fill(slide, spec, spec["ref"], val, rid)
-                filled.add(spec["ref"])
-            elif spec["kind"] == "photo":
-                empty_photos.append(spec["ref"])
-            elif spec.get("keep"):
-                if spec.get("default"):          # Smollan's standard wording
-                    self._fill(slide, spec, spec["ref"], spec["default"], rid)
-                filled.add(spec["ref"])
-        it = r.get("items")
-        items = content.get("items") or []
-        drop_refs = set()
-        if it:
-            keep_defaults = not items and it.get("keep_default")
-            for f, spec in it["fields"].items():
-                for i, ref in enumerate(spec["refs"]):
-                    if ref is None:
-                        continue
-                    val = items[i].get(f) if i < len(items) else None
-                    if val is not None and val != "":
-                        self._fill(slide, spec, ref, val, rid)
-                        filled.add(ref)
-                    elif spec["kind"] == "photo":
-                        empty_photos.append(ref)
-                    elif keep_defaults:
-                        filled.add(ref)
-                    elif i >= len(items):
-                        drop_refs.add(ref)
-        for ref in self._all_refs(r) - filled:
-            if ref in empty_photos and ref not in drop_refs:
-                self._reset_photo(slide, ref)
-                self.log.append(f"slide {n_slide} ({rid}): photo slot {ref} left empty")
-                continue
-            self._clear(slide, ref)
-        for ref in drop_refs | set(r.get("remove", [])):
-            self._clear(slide, ref)
-        if self.client:
-            _replace_client(slide, self.client)
-        _renumber_shape_ids(slide._element.cSld.spTree)
-        _strip_unused_rels(slide.part, slide._element)
+        try:
+            slide._element.cSld.set("name", rid)
+            n_slide = len(self.prs.slides) - self._n_templates
+            filled, empty_photos = set(), []
+            for name, spec in r["slots"].items():
+                val = content.get(name)
+                if val is not None and val != "":
+                    self._fill(slide, spec, spec["ref"], val, rid)
+                    filled.add(spec["ref"])
+                elif spec["kind"] == "photo":
+                    empty_photos.append(spec["ref"])
+                elif spec.get("keep"):
+                    if spec.get("default"):          # Smollan's standard wording
+                        self._fill(slide, spec, spec["ref"], spec["default"], rid)
+                    filled.add(spec["ref"])
+            it = r.get("items")
+            items = content.get("items") or []
+            drop_refs = set()
+            if it:
+                keep_defaults = not items and it.get("keep_default")
+                for f, spec in it["fields"].items():
+                    for i, ref in enumerate(spec["refs"]):
+                        if ref is None:
+                            continue
+                        val = items[i].get(f) if i < len(items) else None
+                        if val is not None and val != "":
+                            self._fill(slide, spec, ref, val, rid)
+                            filled.add(ref)
+                        elif spec["kind"] == "photo":
+                            empty_photos.append(ref)
+                        elif keep_defaults:
+                            filled.add(ref)
+                        elif i >= len(items):
+                            drop_refs.add(ref)
+            for ref in self._all_refs(r) - filled:
+                if ref in empty_photos and ref not in drop_refs:
+                    self._reset_photo(slide, ref)
+                    self.log.append(f"slide {n_slide} ({rid}): photo slot {ref} left empty")
+                    continue
+                self._clear(slide, ref)
+            for ref in drop_refs | set(r.get("remove", [])):
+                self._clear(slide, ref)
+            if self.client:
+                _replace_client(slide, self.client)
+            _renumber_shape_ids(slide._element.cSld.spTree)
+            _strip_unused_rels(slide.part, slide._element)
+        except Exception:
+            _remove_slide(self.prs, slide)      # never leave a half-built slide in the deck
+            raise
         self.recipes_used.append(rid)
         return slide
 

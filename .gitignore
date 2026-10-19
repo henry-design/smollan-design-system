@@ -9,3 +9,4 @@ build/
 dist/
 *.egg-info/
 .venv*/
+examples/test_pie_doughnut.pptx

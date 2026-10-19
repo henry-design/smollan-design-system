@@ -68,8 +68,16 @@ TREE = {"name": "Thandi Mokoena", "role": "Account Director", "children": [
     {"name": "Ken Otieno", "role": "Trade Marketing", "children": [{"name": "Lea Roux", "role": "Promoter"}, {"name": "Ola Ade", "role": "Promoter"}]}]}
 
 
+def template_chart_type(rid, ref):
+    for e in AUTO[RECIPES[rid]["src"]]["elements"]:
+        if e["ref"] == ref:
+            return e.get("chart_type") or ""
+    return ""
+
+
 def value_for(rid, name, spec, i=0):
     k = spec["kind"]
+    ref = spec.get("ref") or (spec.get("refs") or [None] * (i + 1))[i]
     if k == "photo":
         return assets.photo(PHOTOS[(i + len(name)) % len(PHOTOS)])
     if k == "chart":
@@ -80,6 +88,9 @@ def value_for(rid, name, spec, i=0):
         if rid.startswith("feedback"):
             c = {"categories": ["Quality of Work", "Communication", "Value for Money", "Leadership", "Proactivity"],
                  "series": {"Score": [8, 7, 9, 8, 7]}}
+        if template_chart_type(rid, ref).startswith("PIE"):      # pies show one series
+            c = {"categories": ["Modern trade", "Traditional", "Wholesale", "E-commerce"],
+                 "series": {"Channel mix": [41, 29, 18, 12]}}
         if rid == "stats.2_doughnut":
             c = {"categories": ["Modern trade", "Traditional"], "series": {"Split": [70, 30]}}
         return c

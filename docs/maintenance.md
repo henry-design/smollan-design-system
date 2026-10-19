@@ -26,6 +26,7 @@ python tools/scrub_master.py                          # 2. remove client-specifi
 python tools/analyze_slots.py                         # 3. infer slots and limits
 python tools/gen_registry.py                          # 4. write smollan/recipes.py
 python tools/selftest.py                              # 5. build every recipe -> must print "0 recipe failures"
+python tools/test_pie_doughnut.py                     #    pie/doughnut stress test (+ render and check it)
 powershell -File tools/render.ps1 -Pptx examples/selftest_all_recipes.pptx -Out render_out -Width 960
 #    copy render_out/NNN_<id>.png -> thumbnails/<id>.png (first occurrence of each id)
 smollan catalog                                       # 6. regenerate CATALOG.md + catalog.json
@@ -41,6 +42,7 @@ python examples/demo.py && smollan build examples/deck_spec.json   # 7. sanity c
 | `analyze_slots.py` | master -> `tools/auto_specs.json` | every fillable element with geometry, font size, prompt text, inferred role, and grouping of repeated blocks |
 | `gen_registry.py` | curation + auto specs -> `smollan/recipes.py` | builds slot maps, calibrates limits, writes `RECIPES` and the summary index |
 | `selftest.py` | registry -> test deck | fills every recipe with sample content. Fails on any error, reports leftover text |
+| `test_pie_doughnut.py` | -> `examples/test_pie_doughnut.pptx` | pie/doughnut edge cases: 2-8 slices, rings, percent labels, retyped charts, titles, and the guard-rails (9 slices, multi-series pie, negatives) |
 | `render.ps1` | `.pptx` -> PNGs (+ PDF with `-Pdf`) | PowerPoint via COM |
 | `extract_photos.py`, `photo_index.py` | master -> `smollan/assets/photos/` | one-off photo library extraction and naming |
 

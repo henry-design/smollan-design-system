@@ -65,7 +65,7 @@ chart={
     "series": {"2025": [4.2, 5.1, 5.8, 6.4],         # one entry per series, same length
                "2026": [4.8, 5.9, 6.6, 7.3]},
     "title": "Value sales (R m)",                    # optional chart title
-    "labels": True,                                  # optional: show data labels
+    "labels": True,                                  # optional: True = values, "percent" (pie/doughnut), False = none
     "number_format": "0.0",                          # optional Excel number format
 }
 ```
@@ -88,6 +88,28 @@ chart={
   Smollan colours (series order: blue, green, cyan-blue, bright cyan, charcoal, lime...).
 - **Charts are fully editable** in PowerPoint (right-click, Edit Data).
 - **A shorthand** for a single series: `"series": [1, 2, 3]` (named via `"series_name"`).
+
+**Pie and doughnut charts**
+
+```python
+chart={"type": "pie", "categories": ["Modern", "Traditional", "Wholesale"],
+       "series": {"Share": [52, 31, 17]}, "labels": "percent"}
+```
+
+- **Up to 8 slices.** Group the smallest into "Other", or use a bar chart for more categories.
+- **Pie = one series.** For two series use `"type": "doughnut"`, which draws concentric rings
+  (inner = first series), or two charts side by side (`graphs.2_intro`).
+- **No negative values, and not all zeros.** Use a bar or waterfall chart for gains and losses.
+- **Colours:** every slice gets a Smollan colour in order (blue, green, cyan-blue, bright cyan,
+  charcoal, lime, mid blue, dark blue) with white edges. Template charts keep their own colours for
+  the first slices and continue in that order.
+- **Labels:** new charts show white bold values; `"labels": "percent"` shows each slice's share
+  (PowerPoint calculates it). Template charts keep their own label style unless you pass `labels`.
+- **Titles:** template pies (`graphs.2_intro`) and the template doughnut on `graphs.text_left` show
+  the **series name** as their title, so name the series meaningfully
+  (`"series": {"Channel mix 2026": [...]}`) or pass `"title"`.
+- **`stats.2_doughnut`** draws the split in the ring, and the big numbers inside it are separate
+  slots (`chart_value_1`, `chart_value_2`). Keep them consistent with the chart data.
 
 **Waterfall** (bridge from a start value to an end value):
 
